@@ -1,0 +1,15 @@
+/*
+Color scheme
+*/
+$dark-gray:         #272d2d;
+$red:               #ff6978;
+$blue:              #12355b;
+$highlight:         #ffffff;
+$background-color:  #f7f6f6;
+
+@import "scss/site/index";
+@import "scss/site/site";
+@import "scss/components/layout";
+@import "scss/components/footer";
+@import "scss/components/header";
+@import "scss/components/instagram";

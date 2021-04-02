@@ -1,0 +1,16 @@
+body {
+    font-family: monospace;
+    background-color: $background-color;
+}
+a {
+    color: #fff;
+    text-decoration: underline;
+}
+#insta {
+    background-color: $dark-gray;
+}
+#footer {
+    background-color: $red;
+    border-top: 10px solid $blue;
+    border-bottom: 10px solid $blue;
+}

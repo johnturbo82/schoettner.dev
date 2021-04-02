@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "JT1 Hompage",
+    title: "JT1 Homepage",
+    author: 'Oliver Schöttner'
   },
   plugins: [
     {
@@ -12,18 +13,18 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "",
-      },
-    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: "src/images/icon.png",
+        name: `Schoettner Dev`,
+        short_name: `JT1 Dev`,
+        start_url: `/`,
+        background_color: `#12355b`,
+        theme_color: `#ff6978`,
+        display: `standalone`,
+        icon: `src/images/jt.png`,
       },
     },
     "gatsby-transformer-remark",
@@ -44,6 +45,12 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+        resolve: 'gatsby-source-instagram',
+        options: {
+            username: 21470876
+        }
     },
   ],
 };

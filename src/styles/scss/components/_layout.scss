@@ -1,0 +1,33 @@
+.site-container {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-container {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+}
+
+.content {
+    flex-grow: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-wide {
+    flex-grow: 1;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.content-full {
+    flex-grow: 1;
+    width: 100%;
+    margin: 0 auto;
+}
