@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from "react-helmet"
 
 import Header from './header'
+import Content from './content'
 import Footer from './footer'
 import Instagram from './instagram'
 import '../styles/style.scss'
@@ -68,28 +69,20 @@ class Layout extends React.Component {
                     <a id="contact" className="menu-item" href="/contact">Contact</a>
                 </Menu>
                 <div id="site">
-                    <div className="content-container">
-                        <div className="content">
-                            <Header />
-                        </div>
-                    </div>
-                    <div className="content-container">
-                        <div className="content">
-                            {this.props.children}
-                        </div>
-                    </div>
-                    <div id="insta" className="content-container">
-                        <div className="content-wide">
-                            <Instagram />
-                        </div>
-                    </div>
-                    <div id="footer" className="content-container">
-                        <div className="content">
-                            <Footer />
-                        </div>
-                    </div>
+                    <Content>
+                        <Header />
+                    </Content>
+                    <Content>
+                        {this.props.children}
+                    </Content>
+                    <Content id="insta">
+                        <Instagram />
+                    </Content>
+                    <Content id="footer">
+                        <Footer />
+                    </Content>
                 </div>
-            </div>
+            </div >
         )
     }
 }
