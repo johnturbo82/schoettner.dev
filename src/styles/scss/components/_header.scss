@@ -1,8 +1,14 @@
 .header {
     padding: 1rem 0 3rem;
+    background-image: url('../images/title.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 600px;
+    border-bottom: 10px solid $second-color;
 
     .title {
-        color: #000;
+        color: $font-color-dark;
         font-size: 3rem;
         text-decoration: none;
     }

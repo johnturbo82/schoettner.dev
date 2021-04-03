@@ -31,3 +31,52 @@
     width: 100%;
     margin: 0 auto;
 }
+
+/*
+Burger Menu
+*/
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px
+}
+.bm-burger-bars {
+    background: $second-color;
+}
+.bm-burger-bars-hover {
+    background: $first-color;
+}
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+.bm-cross {
+    background: $background-color-light;
+}
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%
+}
+.bm-menu {
+    background: $second-color;
+    font-family: 'Oswald', sans-serif;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+    line-height: 2em;
+}
+.bm-menu a {
+    color: $link-color-light;
+    text-decoration: none;
+}
+.bm-morph-shape {
+    fill: $background-color-dark;
+}
+.bm-item-list {
+    color: $background-color-light;
+    padding: 0.8em;
+}
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}

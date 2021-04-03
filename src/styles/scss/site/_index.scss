@@ -67,8 +67,8 @@ html {
     margin: 0.67em 0;
   }
   mark {
-    background-color: #ff0;
-    color: #000;
+    background-color: $highlight;
+    color: $font-color-dark;
   }
   small {
     font-size: 80%;

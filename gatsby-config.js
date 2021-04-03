@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "JT1 Homepage",
+    title: "schoettner.rocks",
     author: 'Oliver Schöttner',
     street: "Steigerwaldstr. 33",
     postal_code: "85049",

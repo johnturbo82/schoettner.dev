@@ -5,7 +5,11 @@
   "description": "JT1 Hompage",
   "author": "Oliver Schöttner",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "dev",
+    "Oliver Schöttner",
+    "John Turbo",
+    "Rock n Roll"
   ],
   "scripts": {
     "develop": "gatsby develop",

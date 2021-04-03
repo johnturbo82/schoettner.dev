@@ -1,11 +1,20 @@
 /*
 Color scheme
 */
-$dark-gray:         #272d2d;
-$red:               #ff6978;
-$blue:              #12355b;
-$highlight:         #ffffff;
-$background-color:  #f7f6f6;
+$first-color:             #ff6978;
+$second-color:            #12355b;
+$highlight:               #ffffff;
+
+$background-color-light:  #f7f6f6;
+$background-color-dark:   #272d2d;
+
+$font-color-dark:         #272d2d;
+$font-color-light:        #ffffff;
+$link-color-dark:         #2f3f57;
+$link-color-light:        #ffffff;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 
 @import "scss/site/index";
 @import "scss/site/site";
