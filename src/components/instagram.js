@@ -5,13 +5,12 @@ import Img from "gatsby-image"
 const Instagram = () => {
     const insta = useStaticQuery(graphql`
         query {
-            allInstaNode(limit: 8, sort: {fields:timestamp, order: DESC}) {
+            allInstagramContent(limit: 8, sort: {fields:timestamp, order: DESC}) {
                 edges {
                     node {
                         id
                         caption
-                        likes
-                        localFile {
+                        localImage {
                             childImageSharp {
                                 fixed(
                                     width: 600, 
@@ -29,18 +28,18 @@ const Instagram = () => {
 
     return (
         <div className="insta-feed">
-            {insta.allInstaNode.edges.map((edge) => {
+            {insta.allInstagramContent.edges.map((edge) => {
                 return (
                     <div key={edge.node.id} className="insta-feed-post">
                         <a href={`https://www.instagram.com/p/${edge.node.id}`} title={edge.node.caption} target="_blank" rel="noreferrer">
                             <Img
                                 className="insta-image"
                                 alt={edge.node.caption}
-                                fixed={edge.node.localFile.childImageSharp.fixed}
+                                fixed={edge.node.localImage.childImageSharp.fixed}
                                 fadeIn={true}
                             />
                             <div className="overlay">
-                                {edge.node.likes}&nbsp;&#10084;
+                                {edge.node.caption}
                             </div>
                         </a>
                     </div>

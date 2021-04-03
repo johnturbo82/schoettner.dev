@@ -7,6 +7,13 @@ const Footer = () => {
             site {
                 siteMetadata {
                     author
+                    street
+                    postal_code
+                    city
+                    email
+                    mailto
+                    mobile
+                    mobileto
                 }
             }
         }
@@ -15,9 +22,9 @@ const Footer = () => {
     return (
         <footer className="footer">
             <h2>Impressum</h2>
-            <p>{data.site.siteMetadata.author}<br />Steigerwaldstr. 33<br />85049 Ingolstadt</p>
-            <p><a href="mailto:oliver@schoettner.org">oliver@schoettner.rocks</a></p>
-            <p>+49 170 / 8872666</p>
+            <p>{data.site.siteMetadata.author}<br />{data.site.siteMetadata.street}<br />{data.site.siteMetadata.postal_code} {data.site.siteMetadata.city}</p>
+            <p><a href={data.site.siteMetadata.mailto}>{data.site.siteMetadata.email}</a></p>
+            <p><a href={data.site.siteMetadata.mobileto}>{data.site.siteMetadata.mobile}</a></p>
         </footer>
     )
 }

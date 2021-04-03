@@ -1,7 +1,14 @@
 module.exports = {
   siteMetadata: {
     title: "JT1 Homepage",
-    author: 'Oliver Schöttner'
+    author: 'Oliver Schöttner',
+    street: "Steigerwaldstr. 33",
+    postal_code: "85049",
+    city: "Ingolstadt",
+    email: "oliver@schoettner.rocks",
+    mailto: "mailto:oliver@schoettner.rocks",
+    mobile: "0170 / TURBO ON",
+    mobileto: "tel:+491708872666"
   },
   plugins: [
     {
@@ -47,9 +54,9 @@ module.exports = {
       __key: "pages",
     },
     {
-        resolve: 'gatsby-source-instagram',
+        resolve: 'gatsby-source-instagram-all',
         options: {
-            username: 21470876
+            access_token: "IGQVJVY25kZA2FoM2F6LXJuTmZAxVkVBVl9fMXdaQTViZAzUwdmNqRTlsY3ZA2Q3ZApUzNkWEh5WDM5YlJ3bjFYYWNYSl9uRlc0ejdTRE5OY0ZAPZAnpaZAU1fX1owM0x5QVhYTnY3S1FIenNva2Q3ai05b0l5aQZDZD"
         }
     },
   ],
