@@ -34,7 +34,7 @@ const Instagram = () => {
                         <a href={`https://www.instagram.com/p/${edge.node.id}`} title={edge.node.caption} target="_blank" rel="noreferrer">
                             <Img
                                 className="insta-image"
-                                alt={edge.node.caption}
+                                alt="Instagram Pic"
                                 fixed={edge.node.localImage.childImageSharp.fixed}
                                 fadeIn={true}
                             />

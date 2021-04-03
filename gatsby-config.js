@@ -8,7 +8,8 @@ module.exports = {
     email: "oliver@schoettner.rocks",
     mailto: "mailto:oliver@schoettner.rocks",
     mobile: "0170 / TURBO ON",
-    mobileto: "tel:+491708872666"
+    mobileto: "tel:+491708872666",
+    siteUrl: "https://schoettner.rocks"
   },
   plugins: [
     {
