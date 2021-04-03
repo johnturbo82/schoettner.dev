@@ -1,8 +1,11 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     background-color: $background-color-light;
 }
 a {
     text-decoration: underline;
     color: $link-color-dark;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
 }

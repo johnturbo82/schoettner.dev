@@ -8,8 +8,17 @@
     border-bottom: 10px solid $second-color;
 
     .title {
-        color: $font-color-dark;
+        color: $font-color-light;
         font-size: 3rem;
         text-decoration: none;
+        text-shadow: 2px 2px 0 $third-color;
+        text-align: right;
+        
+        a {
+            color: $font-color-light;
+            font-size: 3rem;
+            text-decoration: none;
+            text-shadow: 2px 2px 0 $third-color;
+        }
     }
 }
