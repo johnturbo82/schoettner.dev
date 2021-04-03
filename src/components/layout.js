@@ -25,7 +25,7 @@ class Layout extends React.Component {
                 </Menu>
                 <div id="site">
                     <Header />
-                    <Content>
+                    <Content type="text">
                         {this.props.children}
                     </Content>
                     <Content id="insta">
