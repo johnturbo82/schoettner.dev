@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const Instagram = () => {
     const insta = useStaticQuery(graphql`
@@ -12,12 +12,7 @@ const Instagram = () => {
                         caption
                         localImage {
                             childImageSharp {
-                                fixed(
-                                    width: 600, 
-                                    height: 600
-                                    ) {
-                                    ...GatsbyImageSharpFixed_withWebp
-                                }
+                                gatsbyImageData(layout: FIXED)
                             }
                         }
                     }
@@ -32,11 +27,10 @@ const Instagram = () => {
                 return (
                     <div key={edge.node.id} className="insta-feed-post">
                         <a href={`https://www.instagram.com/p/${edge.node.id}`} title={edge.node.caption} target="_blank" rel="noreferrer">
-                            <Img
+                            <GatsbyImage
                                 className="insta-image"
                                 alt="Instagram Pic"
-                                fixed={edge.node.localImage.childImageSharp.fixed}
-                                fadeIn={true}
+                                image={edge.node.localImage.childImageSharp.gatsbyImageData}
                             />
                             <div className="overlay">
                                 {edge.node.caption}
