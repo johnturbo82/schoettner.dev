@@ -14,6 +14,14 @@ $font-color-light:        #ffffff;
 $link-color-dark:         #2f3f57;
 $link-color-light:        #ffffff;
 
+/*
+Recurring effects
+*/
+$box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+
+/*
+Imports
+*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 @import "scss/site/index";
@@ -23,3 +31,55 @@ $link-color-light:        #ffffff;
 @import "scss/components/content";
 @import "scss/components/header";
 @import "scss/components/instagram";
+
+/*
+Responsive breakpoints
+*/
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 1200px;
+$screen-xl-min: 1600px;
+
+@mixin xs {
+    @media (max-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+ @mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+ @mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+ @mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
+
+body {
+    @include xs() {
+        background-color: #00ffff !important;
+    }
+    @include sm() {
+        background-color: #ff0000 !important;
+    }
+    @include md {
+        background-color: #0000ff !important;
+    }
+    @include lg() {
+        background-color: #00ff00 !important;
+    }
+    @include xl {
+        background-color: #ffff00 !important;
+    }
+}
