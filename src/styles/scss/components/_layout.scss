@@ -15,7 +15,14 @@ Burger Menu
     width: 36px;
     height: 30px;
     left: 36px;
-    top: 36px
+    top: 36px;
+
+    @include xs() {
+        bottom: 36px;
+        right: 36px;
+        top: inherit;
+        left: inherit;
+    }
 }
 .bm-burger-button::before {
     content: ' ';
@@ -25,6 +32,11 @@ Burger Menu
     width: 87px;
     margin: -15px 0 0 -36px;
     box-shadow: $box-shadow;
+
+    @include xs() {
+        width: 65px;
+        margin: -15px 0 0 -15px;
+    }
 }
 .bm-burger-bars {
     background: $second-color;
