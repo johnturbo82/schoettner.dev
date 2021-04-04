@@ -20,10 +20,10 @@ class Layout extends React.Component {
                     <title>schoettner.rocks | Dev</title>
                 </Helmet>
                 <Menu pageWrapId={"site"} outerContainerId={"container"} >
-                    <a id="home" className="menu-item" href="/">Home</a>
-                    <a id="blog" className="menu-item" href="/blog">Blog</a>
-                    <a id="about" className="menu-item" href="/about">About</a>
-                    <a id="contact" className="menu-item" href="/contact">Contact</a>
+                    <a id="home" className={(this.props.path === "/")? "menu-item active" : "menu-item"} href="/">Home</a>
+                    <a id="blog" className={(this.props.path === "/blog" || this.props.path.includes("/blog"))? "menu-item active" : "menu-item"} href="/blog">Blog</a>
+                    <a id="about" className={(this.props.path === "/about")? "menu-item active" : "menu-item"} href="/about">About</a>
+                    <a id="contact" className={(this.props.path === "/contact")? "menu-item active" : "menu-item"} href="/contact">Home</a>
                 </Menu>
                 <div id="site">
                     <Header />

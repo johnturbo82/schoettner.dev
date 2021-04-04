@@ -23,7 +23,7 @@ class Post extends Component {
     const post = this.props.data.wpPost
 
     return (
-      <Layout>
+      <Layout path={this.props.path}>
         <h1>{post.title}</h1>
         <div dangerouslySetInnerHTML={{__html: post.content}} />
       </Layout>
