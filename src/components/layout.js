@@ -13,7 +13,9 @@ class Layout extends React.Component {
     render() {
         return (
             <div id="container" className="site-container">
-                <Helmet>
+                <Helmet htmlAttributes={{
+                    lang: 'de',
+                }}>
                     <meta charSet="utf-8" />
                     <title>schoettner.rocks | Dev</title>
                 </Helmet>

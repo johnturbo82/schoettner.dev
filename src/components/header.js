@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import Content from './content'
+import background from "../images/title.jpg"
 
 const Header = () => {
     const data = useStaticQuery(graphql`
@@ -14,7 +15,7 @@ const Header = () => {
     `)
 
     return (
-        <header className="header">
+        <header className="header" style={{ backgroundImage: `url(${background})` }}>
             <Content>
                 <h1 className="title">
                     <Link to="/">
