@@ -27,7 +27,7 @@
     }
 }
 .bm-burger-bars {
-    background: $second-color;
+    background: $menu-bars;
 }
 .bm-burger-bars-hover {
     background: $third-color;
@@ -44,8 +44,8 @@
     height: 100%
 }
 .bm-menu {
-    background: $third-color;
-    font-family: 'Oswald', sans-serif;
+    background: $menu;
+    font-family: $headline_font;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
     line-height: 2em;
@@ -55,10 +55,10 @@
     text-decoration: none;
 }
 .bm-menu a:hover {
-    color: $second-color;
+    color: $third-color;
 }
 .bm-menu a.active {
-    color: $first-color;
+    color: $second-color;
 }
 .bm-morph-shape {
     fill: $background-color-dark;

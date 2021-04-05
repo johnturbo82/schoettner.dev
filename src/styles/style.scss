@@ -14,16 +14,25 @@ $font-color-light:        #ffffff;
 $link-color-dark:         #2f3f57;
 $link-color-light:        #ffffff;
 
+$border-separators:         $second-color;
+$menu-bars:                 $second-color;
+$menu:                      $first-color;
+
 /*
 Recurring effects
 */
 $box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
 
 /*
-Imports
+Fonts
 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@400;700&display=swap');
+$headline_font:     'Roboto', sans-serif;
+$text_font:         'Noto Sans JP', sans-serif;
 
+/*
+Components
+*/
 @import "scss/site/index";
 @import "scss/site/responsiveness";
 @import "scss/site/site";
