@@ -11,4 +11,5 @@ const SideBar = (props) => {
     </Menu>
   );
 };
+
 export default SideBar;
