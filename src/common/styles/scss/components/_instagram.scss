@@ -25,6 +25,7 @@
     }
 
     .overlay {
+        z-index: 500;
         display: flex;
         position: absolute;
         height: 100%;
