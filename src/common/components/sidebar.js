@@ -11,7 +11,7 @@ const SideBar = (props) => {
                     <a id="home" className={(props.path === "/") ? "menu-item active" : "menu-item"} href="/">Home</a>
                     <a id="blog" className={(props.path === "/blog" || props.path.includes("/blog")) ? "menu-item active" : "menu-item"} href="/blog">Blog</a>
                     <a id="about" className={(props.path === "/about") ? "menu-item active" : "menu-item"} href="/about">About</a>
-                    <a id="contact" className={(props.path === "/contact") ? "menu-item active" : "menu-item"} href="/contact">Home</a>
+                    <a id="contact" className={(props.path === "/contact") ? "menu-item active" : "menu-item"} href="/Contact">Home</a>
                 </div>
                 <div className="sidebar_mood" >
                     Mooood
