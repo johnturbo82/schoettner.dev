@@ -33,13 +33,13 @@ $text_font:         'Noto Sans JP', sans-serif;
 /*
 Components
 */
-@import "scss/site/index";
-@import "scss/site/responsiveness";
-@import "scss/site/site";
-@import "scss/components/layout";
-@import "scss/components/footer";
-@import "scss/components/homebutton";
-@import "scss/components/sidebar";
-@import "scss/components/content";
-@import "scss/components/header";
-@import "scss/components/instagram";
+@import "common/styles/scss/site/index";
+@import "common/styles/scss/site/responsiveness";
+@import "common/styles/scss/site/site";
+@import "common/styles/scss/components/layout";
+@import "common/styles/scss/components/footer";
+@import "common/styles/scss/components/homebutton";
+@import "common/styles/scss/components/sidebar";
+@import "common/styles/scss/components/content";
+@import "common/styles/scss/components/header";
+@import "common/styles/scss/components/instagram";

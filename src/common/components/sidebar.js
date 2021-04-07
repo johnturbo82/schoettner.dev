@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../images/jt.png"
+import logo from "../../images/jt.png"
 
 const SideBar = (props) => {
     return (

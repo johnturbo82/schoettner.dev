@@ -7,7 +7,7 @@ import SideBar from "./sidebar";
 import Content from './content'
 import Footer from './footer'
 import Instagram from './instagram'
-import '../styles/style.scss'
+import '../../style.scss'
 
 class Layout extends React.Component {
     constructor(props) {

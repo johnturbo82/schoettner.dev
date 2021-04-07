@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import Content from './content'
-import background from "../images/title.jpg"
+import background from "../../images/title.jpg"
 
 const Header = () => {
     const data = useStaticQuery(graphql`

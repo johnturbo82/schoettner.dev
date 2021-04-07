@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Link, graphql } from "gatsby"
 
-import Layout from '../components/layout'
+import Layout from '../common/components/layout'
 
 export const pageQuery = graphql`
     query {
