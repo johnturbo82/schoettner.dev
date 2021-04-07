@@ -1,0 +1,32 @@
+.home-button {
+    z-index: 9997;
+    position: fixed;
+    width: 87px;
+    height: 58px;
+    left: 0px;
+    top: 36px;
+    box-shadow: $box-shadow;
+    background-color: $highlight;
+    padding: 8px 0 0 36px;
+    cursor: pointer;
+
+    &:hover {
+        div {
+            background: $third-color;
+        }
+    }
+
+    @include xs() {
+        bottom: 36px;
+        right: 0px;
+        top: inherit;
+        left: inherit;
+        padding: 8px 0 0 16px;
+    }
+    div {
+        width: 35px;
+        height: 6px;
+        background-color: $menu-bars;
+        margin: 6px 0;
+    }
+}

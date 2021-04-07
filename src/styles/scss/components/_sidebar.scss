@@ -1,72 +1,95 @@
-.bm-burger-button {
+.overlay {
+    z-index: 9998;
     position: fixed;
-    width: 36px;
-    height: 30px;
-    left: 36px;
-    top: 36px;
-
-    @include xs() {
-        bottom: 36px;
-        right: 36px;
-        top: inherit;
-        left: inherit;
-    }
-}
-.bm-burger-button::before {
-    content: ' ';
-    background-color: $highlight;
-    display: block;
-    height: 58px;
-    width: 87px;
-    margin: -15px 0 0 -36px;
-    box-shadow: $box-shadow;
-
-    @include xs() {
-        width: 65px;
-        margin: -15px 0 0 -15px;
-    }
-}
-.bm-burger-bars {
-    background: $menu-bars;
-}
-.bm-burger-bars-hover {
-    background: $third-color;
-}
-.bm-cross-button {
-    height: 24px;
-    width: 24px;
-}
-.bm-cross {
-    background: $background-color-light;
-}
-.bm-menu-wrap {
-    position: fixed;
-    height: 100%
-}
-.bm-menu {
-    background: $menu;
-    font-family: $headline_font;
-    padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
-    line-height: 2em;
-}
-.bm-menu a {
-    color: $link-color-light;
-    text-decoration: none;
-}
-.bm-menu a:hover {
-    color: $third-color;
-}
-.bm-menu a.active {
-    color: $second-color;
-}
-.bm-morph-shape {
-    fill: $background-color-dark;
-}
-.bm-item-list {
-    color: $background-color-light;
-    padding: 0.8em;
-}
-.bm-overlay {
+    height: 100%;
+    width: 100%;
     background: rgba(0, 0, 0, 0.3);
+}
+.sidebar {
+    z-index: 9999;
+    position: fixed;
+    height: 100%;
+    max-width: 1000px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    @include sm() {
+        width: 100%;
+    }
+    @include md() {
+        width: 100%;
+    }
+
+    .close {
+        position: absolute;
+        right: 25px;
+        top: 10px;
+        z-index: 9000;
+        color: $highlight;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .sidebar_nav {
+        width: 50%;
+        position: absolute;
+        height: 100;
+        background-color: $first-color;
+        top: 0;
+        left: 0;
+        bottom: 0;
+
+        @include xs() {
+            width: 100%;
+        }
+
+        .logo {
+            display: block;
+            width: 250px;
+            margin: 25px auto;
+        }
+
+        a {
+            font-family: $headline_font;
+            color: $highlight;
+            display: block;
+            text-decoration: none;
+            text-indent: 20%;
+            font-size: 1.35em;
+            min-height: 40px;
+        }
+
+        a.active {
+            color: $second-color;
+        }
+
+        a:hover {
+            color: $third-color;
+        }
+    }
+
+    .sidebar_mood {
+        width: 50%;
+        position: absolute;
+        height: 100;
+        background-color: $background-color-dark;
+        top: 0;
+        right: 0;
+        bottom: 0;
+
+        @include xs() {
+            display: none;
+        }
+    }
+
+    img {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    ul li {
+        display: block;
+    }
 }

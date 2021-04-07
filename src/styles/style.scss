@@ -1,7 +1,7 @@
 /*
 Color scheme
 */
-$first-color:             #ff6978;
+$first-color:             #931725;
 $second-color:            #12355b;
 $third-color:             #4870a7;
 $highlight:               #ffffff;
@@ -38,6 +38,7 @@ Components
 @import "scss/site/site";
 @import "scss/components/layout";
 @import "scss/components/footer";
+@import "scss/components/homebutton";
 @import "scss/components/sidebar";
 @import "scss/components/content";
 @import "scss/components/header";

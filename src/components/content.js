@@ -1,7 +1,5 @@
 import React from 'react'
 
-import '../styles/style.scss'
-
 class Content extends React.Component {
     render() {
         var contentClass = "content";
