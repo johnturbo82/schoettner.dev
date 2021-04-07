@@ -9,31 +9,38 @@
     z-index: 9999;
     position: fixed;
     height: 100%;
-    max-width: 1000px;
+    max-width: 800px;
     top: 0;
     left: 0;
     bottom: 0;
     width: 100%;
+    font-weight: bold;
 
-    @include sm() {
+    @include xs() {
         width: 100%;
     }
-    @include md() {
+    @include sm() {
         width: 100%;
     }
 
     .close {
         position: absolute;
         right: 25px;
-        top: 10px;
+        top: 20px;
         z-index: 9000;
         color: $highlight;
         font-size: 45px;
         cursor: pointer;
+        font-weight: normal;
+
+        @include xs() {
+            top: auto;
+            bottom: 35px;
+        }
     }
 
     .sidebar_nav {
-        width: 50%;
+        width: 56%;
         position: absolute;
         height: 100;
         background-color: $first-color;
@@ -71,16 +78,40 @@
     }
 
     .sidebar_mood {
-        width: 50%;
+        width: 44%;
         position: absolute;
         height: 100;
         background-color: $background-color-dark;
         top: 0;
         right: 0;
         bottom: 0;
+        color: $font-color-light;
+        padding: 40px;
 
         @include xs() {
             display: none;
+        }
+
+        a.mood {
+            display: block;
+            height: 22%;
+            width: 100%;
+            background-size: cover;
+            position: relative;
+            border: 2px solid $highlight;
+            color: $link-color-light;
+
+            div {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                background-color: $first-color;
+                opacity: 0.8;
+                padding: 0 4px;
+            }
+        }
+        .mood + .mood {
+            margin-top: 20px;
         }
     }
 

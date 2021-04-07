@@ -1,5 +1,10 @@
 import React from "react";
 import logo from "../../images/jt.png"
+import jt1 from "../../images/moods/jt1.png"
+import schoettner from "../../images/moods/schoettner.png"
+import code from "../../images/moods/code.png"
+import johnturbo from "../../images/moods/johnturbo.png"
+import { Link } from "gatsby";
 
 const SideBar = (props) => {
     return (
@@ -14,7 +19,19 @@ const SideBar = (props) => {
                     <a id="contact" className={(props.path === "/contact") ? "menu-item active" : "menu-item"} href="/Contact">Home</a>
                 </div>
                 <div className="sidebar_mood" >
-                    Mooood
+                    <h3>Mood Selector</h3>
+                    <a href="https://schoettner.rocks" className="mood" style={{ backgroundImage: `url(${schoettner})` }} alt="schoettner.rocks">
+                        <div>Software Developer</div>
+                    </a>
+                    <a href="https://schoettner.rocks" className="mood" style={{ backgroundImage: `url(${johnturbo})` }} alt="johnturbo.com">
+                        <div>Stars & Stripes</div>
+                    </a>
+                    <a href="https://schoettner.rocks" className="mood" style={{ backgroundImage: `url(${jt1})` }} alt="jt1.rocks">
+                        <div>Rock n' Roll</div>
+                    </a>
+                    <a href="https://schoettner.rocks" className="mood" style={{ backgroundImage: `url(${code})` }} alt="schoettner.dev">
+                        <div>Nerdy</div>
+                    </a>
                 </div>
             </div>
         </div>
