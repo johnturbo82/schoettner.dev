@@ -7,16 +7,16 @@
     border-bottom: 10px solid $border-separators;
 
     .title {
-        color: $title-color;
         font-size: 3rem;
         text-decoration: none;
         text-align: right;
+        color: $title-color;
         
         a {
-            color: $font-color-light;
             font-size: 3rem;
             text-decoration: none;
             text-shadow: $title-text-shadow;
+            color: $title-color;
         }
     }
 }
