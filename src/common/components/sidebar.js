@@ -4,7 +4,6 @@ import jt1 from "../../images/moods/jt1.png"
 import schoettner from "../../images/moods/schoettner.png"
 import code from "../../images/moods/code.png"
 import johnturbo from "../../images/moods/johnturbo.png"
-import { Link } from "gatsby";
 
 const SideBar = (props) => {
     return (
