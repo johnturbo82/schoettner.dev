@@ -11,12 +11,20 @@
         text-decoration: none;
         text-align: right;
         color: $title-color;
+
+        @include xs {
+            font-size: 2.25rem;
+        }
         
         a {
             font-size: 3rem;
             text-decoration: none;
             text-shadow: $title-text-shadow;
             color: $title-color;
+
+            @include xs {
+                font-size: 2.25rem;
+            }
         }
     }
 }

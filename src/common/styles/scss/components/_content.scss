@@ -3,6 +3,10 @@
     width: 100%;
     margin: 0;
     padding: 20px;
+
+    @include xs {
+        padding: 10px;
+    }
 }
 
 .content {
@@ -17,6 +21,10 @@
     padding: 45px;
     border-radius: 5px;
     margin: 20px auto;
+
+    @include xs {
+        padding: 15px;
+    }
 }
 .content-wide {
     flex-grow: 1;
