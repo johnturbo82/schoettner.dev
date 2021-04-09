@@ -91,7 +91,7 @@
             display: none;
         }
 
-        a.mood {
+        .mood {
             display: block;
             height: 22%;
             width: 100%;
@@ -99,6 +99,7 @@
             position: relative;
             border: 2px solid $highlight;
             color: $link-color-light;
+            margin-bottom: 20px;
 
             div {
                 position: absolute;
@@ -108,9 +109,6 @@
                 opacity: 0.8;
                 padding: 0 4px;
             }
-        }
-        .mood + .mood {
-            margin-top: 20px;
         }
     }
 
