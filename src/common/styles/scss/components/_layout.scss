@@ -6,3 +6,13 @@
     flex-direction: column;
     min-height: 100vh;
 }
+.star::after {
+    content: '★';
+    display: block;
+    font-size: 600px;
+    color: $first-color;
+    opacity: 0.2;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+}
