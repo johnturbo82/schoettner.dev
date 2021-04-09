@@ -1,5 +1,4 @@
 import React from "react";
-import { graphql } from "gatsby"
 import Moods from './moods'
 
 import logo from "../../images/jt.svg"

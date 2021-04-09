@@ -1,18 +1,20 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import { GatsbyImage } from "gatsby-plugin-image"
+import Img from "gatsby-image"
 
 const Instagram = () => {
     const insta = useStaticQuery(graphql`
         query {
-            allInstagramContent(limit: 8, sort: {fields:timestamp, order: DESC}) {
+            allInstagramContent(limit: 9, sort: {fields:timestamp, order: DESC}) {
                 edges {
                     node {
                         id
                         caption
                         localImage {
                             childImageSharp {
-                                gatsbyImageData(layout: FIXED)
+                                fluid(quality: 90, maxWidth: 400) {
+                                    ...GatsbyImageSharpFluid_withWebp
+                                }
                             }
                         }
                     }
@@ -27,10 +29,12 @@ const Instagram = () => {
                 return (
                     <div key={edge.node.id} className="insta-feed-post">
                         <a href={`https://www.instagram.com/p/${edge.node.id}`} title={edge.node.caption} target="_blank" rel="noreferrer">
-                            <GatsbyImage
+                            <Img
                                 className="insta-image"
-                                alt="Instagram Pic"
-                                image={edge.node.localImage.childImageSharp.gatsbyImageData}
+                                fluid={edge.node.localImage.childImageSharp.fluid}
+                                objectFit="cover"
+                                objectPosition="50% 50%"
+                                alt=""
                             />
                             <div className="overlay">
                                 {edge.node.caption}
