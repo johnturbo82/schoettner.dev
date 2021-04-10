@@ -10,6 +10,7 @@ const Instagram = () => {
                     node {
                         id
                         caption
+                        permalink
                         localImage {
                             childImageSharp {
                                 fluid(quality: 90, maxWidth: 400) {
@@ -22,13 +23,12 @@ const Instagram = () => {
             }
         }
     `)
-
     return (
         <div className="insta-feed">
             {insta.allInstagramContent.edges.map((edge) => {
                 return (
                     <div key={edge.node.id} className="insta-feed-post">
-                        <a href={`https://www.instagram.com/p/${edge.node.id}`} title={edge.node.caption} target="_blank" rel="noreferrer">
+                        <a href={edge.node.permalink} title={edge.node.caption} target="_blank" rel="noreferrer">
                             <Img
                                 className="insta-image"
                                 fluid={edge.node.localImage.childImageSharp.fluid}
