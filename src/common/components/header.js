@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import Content from './content'
-import background from "../../images/title.jpg"
+import BackgroundImage from 'gatsby-background-image'
 
 const Header = () => {
     const data = useStaticQuery(graphql`
@@ -11,18 +11,27 @@ const Header = () => {
                     title
                 }
             }
+            background: file(relativePath: { eq: "title.jpg" }) {
+                childImageSharp {
+                    fluid(quality: 90, maxWidth: 2000) {
+                        ...GatsbyImageSharpFluid_withWebp
+                    }
+                }
+            }
         }
     `)
 
     return (
-        <header className="header" style={{ backgroundImage: `url(${background})` }}>
-            <Content>
-                <h1 className="title">
-                    <Link to="/">
-                        {data.site.siteMetadata.title} 
-                    </Link>
-                </h1>
-            </Content>
+        <header>
+            <BackgroundImage className="header" fluid={data.background.childImageSharp.fluid}>
+                <Content>
+                    <h1 className="title">
+                        <Link to="/">
+                            {data.site.siteMetadata.title}
+                        </Link>
+                    </h1>
+                </Content>
+            </BackgroundImage>
         </header>
     )
 }

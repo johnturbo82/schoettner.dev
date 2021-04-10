@@ -9,21 +9,21 @@ const Moods = () => {
                 schoettner: file(relativePath: { eq: "moods/schoettner.png" }) {
                     childImageSharp {
                         fluid(quality: 90, maxWidth: 400) {
-                            ...GatsbyImageSharpFluid
+                            ...GatsbyImageSharpFluid_withWebp
                         }
                     }
                 }
                 jt1: file(relativePath: { eq: "moods/jt1.png" }) {
                     childImageSharp {
                         fluid(quality: 90, maxWidth: 400) {
-                            ...GatsbyImageSharpFluid
+                            ...GatsbyImageSharpFluid_withWebp
                         }
                     }
                 }
                 johnturbo: file(relativePath: { eq: "moods/johnturbo.png" }) {
                     childImageSharp {
                         fluid(quality: 90, maxWidth: 400) {
-                            ...GatsbyImageSharpFluid
+                            ...GatsbyImageSharpFluid_withWebp
                         }
                     }
                 }
