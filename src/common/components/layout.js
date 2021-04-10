@@ -1,6 +1,6 @@
 import React from 'react'
-import { Helmet } from "react-helmet"
 
+import SiteMeta from "./site_meta";
 import Header from './header'
 import Homebutton from "./homebutton";
 import SideBar from "./sidebar";
@@ -43,18 +43,14 @@ class Layout extends React.Component {
     }
 
     render() {
+
         return (
             <div id="container" className="site-container">
-                <Helmet htmlAttributes={{
-                    lang: 'de',
-                }}>
-                    <meta charSet="utf-8" />
-                    <title>schoettner.rocks | Dev</title>
-                </Helmet>
                 <Homebutton handleBurgerClick={this.toggleMenu} handleEscKey={this.closeMenuOnEsc} />
                 {this.state.menu_visible && (
                     <SideBar path={this.props.path} handleClose={this.closeMenu} handleEscKey={this.closeMenuOnEsc} />
                 )}
+                <SiteMeta sitetitle={this.props.sitetitle} />
                 <div id="site">
                     <Header />
                     <Content type="text">

@@ -41,7 +41,7 @@ const Moods = () => {
     return (
         <div className="sidebar_mood" >
             <h3>Mood Selector</h3>
-            <a href="https://schoettner.rocks" alt="schoettner.rocks">
+            <a href="https://schoettner.dev" alt="schoettner.dev">
                 <BackgroundImage className="mood" fluid={data.schoettner.childImageSharp.fluid}>
                     <div>Software Developer</div>
                 </BackgroundImage>
@@ -51,12 +51,12 @@ const Moods = () => {
                     <div>Stars & Stripes</div>
                 </BackgroundImage>
             </a>
-            <a href="https://jt1.rocks" alt="jt1.rocks">
+            <a href="https://schoettner.rocks" alt="schoettner.rocks">
                 <BackgroundImage className="mood" fluid={data.jt1.childImageSharp.fluid}>
                     <div>Rock n' Roll</div>
                 </BackgroundImage>
             </a>
-            <a href="https://schoettner.dev" alt="schoettner.rodevcks">
+            <a href="https://nerdy.schoettner.dev" alt="nerdy.schoettner.dev">
                 <BackgroundImage className="mood" fluid={data.code.childImageSharp.fluid}>
                     <div>Nerdy</div>
                 </BackgroundImage>
