@@ -4,18 +4,6 @@ git add ./src/common
 git commit -m "$1"
 git push
 
-FILE=../jt1.rocks
-if [ -d "$FILE" ]; then
-    rm -rf ../jt1.rocks/src/common
-    cp -r ./src/common ../jt1.rocks/src
-
-
-    cd ../jt1.rocks
-    git add ./src/common
-    git commit -m "$1"
-    git push
-fi
-
 FILE=../johnturbo.com
 if [ -d "$FILE" ]; then
     rm -rf ../johnturbo.com/src/common
@@ -28,26 +16,14 @@ if [ -d "$FILE" ]; then
     git push
 fi
 
-FILE=../schoettner.org
-if [ -d "$FILE" ]; then
-    rm -rf ../schoettner.org/src/common
-    cp -r ./src/common ../schoettner.org/src
-
-
-    cd ../schoettner.org
-    git add ./src/common
-    git commit -m "$1"
-    git push
-fi
-
-FILE=../schoettner.dev
+FILE=../schoettner.rocks
 if [ -d "$FILE" ]; then
     echo "Working on"
-    rm -rf ../schoettner.dev/src/common
-    cp -r ./src/common ../schoettner.dev/src
+    rm -rf ../schoettner.rocks/src/common
+    cp -r ./src/common ../schoettner.rocks/src
 
 
-    cd ../schoettner.dev
+    cd ../schoettner.rocks
     git add ./src/common
     git commit -m "$1"
     git push
