@@ -6,13 +6,25 @@
     flex-direction: column;
     min-height: 100vh;
 }
-.star::after {
+.site-container::after {
     content: '★';
     display: block;
-    font-size: 600px;
+    font-size: 50vh;
     color: $first-color;
     opacity: 0.2;
+    z-index: -1;
+    position: fixed;
+    right: 5%;
+    top: 700px;
+}
+.site-container::before {
+    content: '☆';
+    display: block;
+    font-size: 50vh;
+    color: $first-color;
+    opacity: 0.05;
     z-index: 1;
-    position: absolute;
-    right: 0;
+    position: fixed;
+    right: 5%;
+    top: 700px;
 }

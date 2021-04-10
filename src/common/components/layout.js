@@ -58,7 +58,6 @@ class Layout extends React.Component {
                 <div id="site">
                     <Header />
                     <Content type="text">
-                        <div className="star"></div>
                         {this.props.children}
                     </Content>
                     <Content id="insta">
