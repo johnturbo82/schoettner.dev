@@ -1,15 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: "schoettner.rocks",
+    title: "Schoettner.dev",
     author: 'Oliver Schöttner',
     street: "Steigerwaldstr. 33",
     postal_code: "85049",
     city: "Ingolstadt",
-    email: "oliver@schoettner.rocks",
-    mailto: "mailto:oliver@schoettner.rocks",
+    email: "oliver@schoettner.dev",
+    mailto: "mailto:oliver@schoettner.dev",
     mobile: "0170 / TURBO ON",
     mobileto: "tel:+491708872666",
-    siteUrl: "https://schoettner.rocks"
+    siteUrl: "https://schoettner.dev",
+    lang: "de",
   },
   plugins: [
     {

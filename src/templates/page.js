@@ -23,7 +23,7 @@ class Page extends Component {
         const StaticPage = this.props.data.wpPage
 
         return (
-            <Layout path={this.props.path}>
+            <Layout sitetitle="{StaticPage.title}" path={this.props.path}>
                 <h1>{StaticPage.title}</h1>
                 <div dangerouslySetInnerHTML={{ __html: StaticPage.content }} />
             </Layout>

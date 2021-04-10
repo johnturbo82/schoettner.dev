@@ -32,7 +32,7 @@ class BlogPage extends Component {
         const data = this.props.data
 
         return (
-            <Layout path="/blog">
+            <Layout sitetitle="About" path="/blog">
                 <h1>Posts</h1>
                 {data.allWpPost.edges.map(({ node }) => (
                     <div key={node.slug}>
