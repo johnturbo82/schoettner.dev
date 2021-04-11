@@ -40,7 +40,7 @@ const Moods = () => {
     )
     return (
         <div className="sidebar_mood" >
-            <h3>Mood Selector</h3>
+            <h3>Theme</h3>
             <a href="https://schoettner.dev" alt="schoettner.dev">
                 <BackgroundImage className="mood" fluid={data.schoettner.childImageSharp.fluid}>
                     <div>Software Developer</div>
