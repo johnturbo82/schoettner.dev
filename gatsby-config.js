@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Schoettner.dev",
+    title: "schoettner.dev",
     author: 'Oliver Schöttner',
     street: "Steigerwaldstr. 33",
     postal_code: "85049",

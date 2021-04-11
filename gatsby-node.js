@@ -5,15 +5,6 @@ exports.createPages = async ({ graphql, actions }) => {
 
     const result = await graphql(`
     {
-        allWpPage {
-            edges {
-                node {
-                    id
-                    slug
-                    status
-                }
-            }
-        }
         allWpPost {
             edges {
                 node {
@@ -26,18 +17,7 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-    const { allWpPage, allWpPost } = result.data
-
-    const pageTemplate = path.resolve(`./src/templates/page.js`)
-    allWpPage.edges.forEach(edge => {
-        createPage({
-            path: `/${edge.node.slug}/`,
-            component: slash(pageTemplate),
-            context: {
-                id: edge.node.id,
-            },
-        })
-    })
+    const { allWpPost } = result.data
 
     const postTemplate = path.resolve(`./src/templates/post.js`)
     allWpPost.edges.forEach(edge => {
