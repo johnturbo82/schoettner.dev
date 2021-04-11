@@ -2,6 +2,7 @@ import React from 'react'
 
 import SiteMeta from "./site_meta";
 import Header from './header'
+import BreadCrump from './breadcrump'
 import Homebutton from "./homebutton";
 import SideBar from "./sidebar";
 import Content from './content'
@@ -53,6 +54,7 @@ class Layout extends React.Component {
                 <SiteMeta sitetitle={this.props.sitetitle} />
                 <div id="site">
                     <Header />
+                    <BreadCrump sitetitle={this.props.sitetitle} parent={this.props.parent} />
                     <Content type="text">
                         {this.props.children}
                     </Content>
