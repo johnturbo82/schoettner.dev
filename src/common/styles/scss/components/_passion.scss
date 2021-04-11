@@ -1,0 +1,31 @@
+.passion {
+    padding-left: 40px;
+    border-left: 1px solid $background-color-dark;
+    display: block;
+    float: right;
+    width: 300px;
+
+    .passion_icon {
+        font-family: $display_font;
+        font-size:36px;
+        height: 170px;
+        line-height: 110%;
+        border-top: 4px solid $first-color;
+        border-left: 4px solid $first-color;
+        border-bottom: 4px solid $second-color;
+        border-right: 4px solid $second-color;
+        text-shadow: 2px 2px $highlight;
+    }
+    .passion_icon:nth-child(1), .passion_icon:nth-child(4) div {
+        color: $first-color;
+    }
+    .passion_icon:nth-child(2), .passion_icon:nth-child(5) div {
+        color: $second-color;
+    }
+    .passion_icon:nth-child(3), .passion_icon:nth-child(6) div {
+        color: $third-color;
+    }
+    .passion_icon + .passion_icon{
+        margin-top: 20px;
+    }
+}
