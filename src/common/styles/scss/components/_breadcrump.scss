@@ -1,9 +1,21 @@
-.breadcrump {
-    display: block;
-    padding: 0;
+.breadcrump-container {
+    display: flex;
+    width: 100%;
     margin: 0;
-    max-width: 1200px;
-    margin: 20px auto 0;
-    font-family: 'Courier New', Courier, monospace;
-    text-indent: 5px;
+    padding: 0 20px;
+
+    @include xs {
+        padding: 0 10px;
+    }
+
+    .breadcrump {
+        flex-grow: 1;
+        display: block;
+        padding: 0;
+        margin: 0;
+        max-width: 1200px;
+        margin: 20px auto 0;
+        font-family: 'Courier New', Courier, monospace;
+        text-indent: 5px;
+    }
 }
