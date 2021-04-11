@@ -24,7 +24,7 @@
 
     .close {
         position: absolute;
-        right: 25px;
+        right: 38px;
         top: 20px;
         z-index: 9000;
         color: $highlight;
@@ -35,7 +35,6 @@
         @include xs() {
             top: auto;
             bottom: 35px;
-            right: 38px;
         }
     }
 
