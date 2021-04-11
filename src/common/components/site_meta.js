@@ -20,6 +20,7 @@ const SiteMeta = (props) => {
         }}>
             <meta charSet="utf-8" />
             <title>{props.sitetitle} | {data.site.siteMetadata.title}</title>
+            <link rel="canonical" href={"https://schoettner.dev" + props.path}/>
         </Helmet>
     )
 }
