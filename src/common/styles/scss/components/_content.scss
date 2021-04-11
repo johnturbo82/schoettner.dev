@@ -25,6 +25,11 @@
     @include xs {
         padding: 15px;
     }
+
+    .stage {
+        z-index: 10;
+        position: relative;
+    }
 }
 .content-wide {
     flex-grow: 1;

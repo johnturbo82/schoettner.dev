@@ -56,7 +56,9 @@ class Layout extends React.Component {
                     <Header />
                     <BreadCrump sitetitle={this.props.sitetitle} parent={this.props.parent} />
                     <Content type="text">
-                        {this.props.children}
+                        <div className="stage">
+                            {this.props.children}
+                        </div>
                     </Content>
                     <Content id="insta">
                         <Instagram />
