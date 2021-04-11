@@ -33,13 +33,13 @@ class BlogPage extends Component {
 
         return (
             <Layout sitetitle="Blog" path="/blog">
-                <h1>Posts</h1>
+                <h1>Blog</h1>
                 {data.allWpPost.edges.map(({ node }) => (
-                    <div key={node.slug}>
-                        <Link to={node.slug}>
-                            <h2>{node.title}</h2>
-                        </Link>
-                    </div>
+                    <Link to={node.slug}>
+                        <div key={node.slug} className="blog_post">
+                                <h2>{node.title}</h2>
+                        </div>
+                    </Link>
                 ))}
             </Layout>
         )
