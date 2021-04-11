@@ -17,6 +17,10 @@
     position: fixed;
     right: 5%;
     top: 700px;
+
+    @include xs {
+        top: 500px;
+    }
 }
 .site-container::before {
     content: '☆';
@@ -29,4 +33,8 @@
     position: fixed;
     right: 5%;
     top: 700px;
+
+    @include xs {
+        top: 500px;
+    }
 }
