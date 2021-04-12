@@ -5,7 +5,8 @@ import logo from "../../images/jt.svg"
 
 const SideBar = (props) => {
     return (
-        <div className="overlay">
+        <>
+            <div className="overlay" onClick={props.handleClose} onKeyDown={props.handleEscKey} tabIndex={-2}></div>
             <div className="sidebar">
                 <span className="close" title="Close Menu" role="button" onClick={props.handleClose} onKeyDown={props.handleEscKey} tabIndex={-1}>x</span>
                 <div className="sidebar_nav" >
@@ -17,7 +18,7 @@ const SideBar = (props) => {
                 </div>
                 <Moods />
             </div>
-        </div>
+        </>
     );
 };
 
