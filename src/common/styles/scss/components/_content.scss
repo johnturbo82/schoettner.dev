@@ -21,7 +21,7 @@
     padding: 45px;
     border-radius: 5px;
     margin: 0px auto 20px;
-    line-height: 1.6em;
+    line-height: 1.7em;
 
     @include xs {
         padding: 15px;
@@ -44,11 +44,11 @@
     a:after {
         content: '';
         display: inline-block;
-        height: 3px;
+        height: 2px;
         background-color: $second-color;
         width: 100%;
         position: absolute;
-        bottom: -2px;
+        bottom: 0;
         left: 0;
         transition: background-color 0.3s ease;
     }
