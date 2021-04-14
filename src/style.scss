@@ -66,7 +66,6 @@ em:before {
     content: '{';
     display: inline-block;
     font-size: 140%;
-    font-weight: bold;
     color: $link-color-dark;
     position: absolute;
     margin-left: -15px;
@@ -75,7 +74,6 @@ em:after {
     content: '}';
     display: inline-block;
     font-size: 140%;
-    font-weight: bold;
     color: $link-color-dark;
     position: absolute;
 }
