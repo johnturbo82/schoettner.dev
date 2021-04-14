@@ -1,9 +1,18 @@
 .passion {
-    padding-left: 40px;
-    border-left: 1px solid $background-color-dark;
     display: block;
-    float: right;
-    width: 300px;
+    
+    @include xs {
+        width: 100%;
+    }
+    @include sm {
+        width: 100%;
+    }
+    @include md {
+        width: 300px;
+        float: right;
+        padding-left: 40px;
+        border-left: 1px solid $background-color-dark;
+    }
 
     .passion_icon {
         font-family: $display_font;

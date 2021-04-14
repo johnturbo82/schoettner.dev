@@ -21,6 +21,7 @@
     padding: 45px;
     border-radius: 5px;
     margin: 0px auto 20px;
+    line-height: 1.6em;
 
     @include xs {
         padding: 15px;
@@ -29,6 +30,30 @@
     .stage {
         z-index: 10;
         position: relative;
+    }
+
+    a {
+        text-decoration: none;
+        color: $link-color-dark;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+    a:hover {
+        color: $third-color;
+    }
+    a:after {
+        content: '';
+        display: inline-block;
+        height: 3px;
+        background-color: $second-color;
+        width: 100%;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        transition: background-color 0.3s ease;
+    }
+    a:hover:after {
+        background-color: $first-color;
     }
 }
 .content-wide {
@@ -41,4 +66,27 @@
     flex-grow: 1;
     width: 100%;
     margin: 0 auto;
+}
+
+.right_sidebar {
+    @include xs {
+        width: 100%;
+    }
+    @include sm {
+        width: 100%;
+    }
+    @include md {
+        width: 300px;
+    }
+}
+.right_sidebar_opposite {
+    @include xs {
+        width: 100%;
+    }
+    @include sm {
+        width: 100%;
+    }
+    @include md {
+        width: calc(100% - 300px);
+    }
 }
