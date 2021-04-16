@@ -6,6 +6,11 @@
 .footer {
     color: $font-color-light;
 
+    .stage {
+        z-index: 10;
+        position: relative;
+    }
+
     a {
         color: $link-color-light;
         text-decoration: none;
