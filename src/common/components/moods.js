@@ -58,7 +58,7 @@ const Moods = () => {
             </a>
             <a href="https://pure.schoettner.dev" alt="pure.schoettner.dev">
                 <BackgroundImage className="mood" fluid={data.code.childImageSharp.fluid}>
-                    <div>Nerdy</div>
+                    <div>Nerdy Feelings</div>
                 </BackgroundImage>
             </a>
         </div>
