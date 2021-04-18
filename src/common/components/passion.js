@@ -102,7 +102,7 @@ const Passion = () => {
         },
         { 
             title: "Daelim VT 125",
-            position: "top",
+            position: "bottom",
             subtitle: "Anno 1999",
             image: data.Daelim.childImageSharp.fluid
         },
