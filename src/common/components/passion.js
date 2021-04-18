@@ -139,7 +139,7 @@ const Passion = () => {
             image: data.IslayWhiskey.childImageSharp.fluid
         },
         { 
-            title: "Lars Urlich",
+            title: "Lars Ulrich",
             subtitle: "Anno 2019",
             image: data.LarsUlrich.childImageSharp.fluid
         },
