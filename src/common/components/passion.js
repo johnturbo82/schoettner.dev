@@ -13,7 +13,7 @@ const Passion = () => {
                         }
                     }
                 }
-                Dealim: file(relativePath: { eq: "passion/Dealim.jpg" }) {
+                Daelim: file(relativePath: { eq: "passion/Daelim.jpg" }) {
                     childImageSharp {
                         fluid(quality: 90, maxWidth: 400) {
                             ...GatsbyImageSharpFluid_withWebp
@@ -99,9 +99,9 @@ const Passion = () => {
             image: data.TSV1860.childImageSharp.fluid
         },
         { 
-            title: "Dealim VT 125",
+            title: "Daelim VT 125",
             subtitle: "Anno 1999",
-            image: data.Dealim.childImageSharp.fluid
+            image: data.Daelim.childImageSharp.fluid
         },
         { 
             title: "HD Forty Eight",
