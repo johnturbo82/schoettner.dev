@@ -173,6 +173,9 @@ const Passion = () => {
     return (
         <div className="passion" >
             <h3>Passion</h3>
+            <p>{firstImage.position}</p>
+            <p>{secondImage.position}</p>
+            <p>{thirdImage.position}</p>
             <BackgroundImage className="passion_icon" fluid={firstImage.image}>
                 <div className={firstImage.position}>{firstImage.title}</div>
                 {firstImage.subtitle &&
