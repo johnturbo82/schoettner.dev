@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby"
-import BackgroundImage from 'gatsby-background-image'
+import PassionImage from './passion_image'
 
 const Passion = () => {
     const data = useStaticQuery(
@@ -92,67 +92,67 @@ const Passion = () => {
             title: "ERC Ingolstadt",
             position: "bottom",
             subtitle: "Anno 2014",
-            image: data.ERCIngolstadt.childImageSharp.fluid
+            src: data.ERCIngolstadt.childImageSharp.fluid
         },
         { 
             title: "TSV 1860 München",
             position: "top",
             subtitle: null,
-            image: data.TSV1860.childImageSharp.fluid
+            src: data.TSV1860.childImageSharp.fluid
         },
         { 
             title: "Daelim VT 125",
             position: "bottom",
             subtitle: "Anno 1999",
-            image: data.Daelim.childImageSharp.fluid
+            src: data.Daelim.childImageSharp.fluid
         },
         { 
             title: "Forty Eight",
             position: "bottom",
             subtitle: "Anno 2018",
-            image: data.FortyEight.childImageSharp.fluid
+            src: data.FortyEight.childImageSharp.fluid
         },
         { 
             title: "Yamaha Fazer S2",
             position: "top",
             subtitle: null,
-            image: data.FazerS2.childImageSharp.fluid
+            src: data.FazerS2.childImageSharp.fluid
         },
         { 
             title: "CBF 600",
             position: "top",
             subtitle: "Anno 2008",
-            image: data.CBF600.childImageSharp.fluid
+            src: data.CBF600.childImageSharp.fluid
         },
         { 
             title: "CBR 600 F",
             position: "bottom",
             subtitle: "Anno 2002",
-            image: data.CBR600.childImageSharp.fluid
+            src: data.CBR600.childImageSharp.fluid
         },
         { 
             title: "Metallica",
             position: "top",
             subtitle: "Anno 2019",
-            image: data.Metallica.childImageSharp.fluid
+            src: data.Metallica.childImageSharp.fluid
         },
         { 
             title: "Development",
             position: "top",
             subtitle: null,
-            image: data.Development.childImageSharp.fluid
+            src: data.Development.childImageSharp.fluid
         },
         { 
             title: "Islay Whiskey",
             position: "top",
             subtitle: null,
-            image: data.IslayWhiskey.childImageSharp.fluid
+            src: data.IslayWhiskey.childImageSharp.fluid
         },
         { 
             title: "Lars Ulrich",
             position: "bottom",
             subtitle: "Anno 2019",
-            image: data.LarsUlrich.childImageSharp.fluid
+            src: data.LarsUlrich.childImageSharp.fluid
         },
     ]
     const randomGenerator = () => {
@@ -160,40 +160,16 @@ const Passion = () => {
         var shuffled = array.sort(function () { return 0.5 - Math.random() });
         return shuffled.slice(0, 3);
     }
-    var firstImage = null;
-    var secondImage = null;
-    var thirdImage = null;
     const randomList = randomGenerator()
-    firstImage = mood_pics[randomList[0]];
-    secondImage = mood_pics[randomList[1]];
-    thirdImage = mood_pics[randomList[2]];
-    console.log(firstImage);
-    console.log(secondImage);
-    console.log(thirdImage);
+    var firstImage = mood_pics[randomList[0]];
+    var secondImage = mood_pics[randomList[1]];
+    var thirdImage = mood_pics[randomList[2]];
     return (
         <div className="passion" >
             <h3>Passion</h3>
-            <p>{firstImage.position}</p>
-            <p>{secondImage.position}</p>
-            <p>{thirdImage.position}</p>
-            <BackgroundImage className="passion_icon" fluid={firstImage.image}>
-                <div className={firstImage.position}>{firstImage.title}</div>
-                {firstImage.subtitle &&
-                    <span>{firstImage.subtitle}</span>
-                }
-            </BackgroundImage>
-            <BackgroundImage className="passion_icon" fluid={secondImage.image}>
-                <div className={secondImage.position}>{secondImage.title}</div>
-                {secondImage.subtitle &&
-                    <span>{secondImage.subtitle}</span>
-                }
-            </BackgroundImage>
-            <BackgroundImage className="passion_icon" fluid={thirdImage.image}>
-                <div className={thirdImage.position}>{thirdImage.title}</div>
-                {thirdImage.subtitle &&
-                    <span>{thirdImage.subtitle}</span>
-                }
-            </BackgroundImage>
+            <PassionImage image={firstImage}/>
+            <PassionImage image={secondImage}/>
+            <PassionImage image={thirdImage}/>
         </div>
     );
 }
