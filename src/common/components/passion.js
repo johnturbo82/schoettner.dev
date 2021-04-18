@@ -164,6 +164,9 @@ const Passion = () => {
     var firstImage = mood_pics[randomList[0]];
     var secondImage = mood_pics[randomList[1]];
     var thirdImage = mood_pics[randomList[2]];
+    console.log(firstImage);
+    console.log(secondImage);
+    console.log(thirdImage);
     return (
         <div className="passion" >
             <h3>Passion</h3>
