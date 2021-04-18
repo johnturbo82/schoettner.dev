@@ -160,10 +160,13 @@ const Passion = () => {
         var shuffled = array.sort(function () { return 0.5 - Math.random() });
         return shuffled.slice(0, 3);
     }
-    var randomList = randomGenerator()
-    var firstImage = mood_pics[randomList[0]];
-    var secondImage = mood_pics[randomList[1]];
-    var thirdImage = mood_pics[randomList[2]];
+    var firstImage = null;
+    var secondImage = null;
+    var thirdImage = null;
+    const randomList = randomGenerator()
+    firstImage = mood_pics[randomList[0]];
+    secondImage = mood_pics[randomList[1]];
+    thirdImage = mood_pics[randomList[2]];
     console.log(firstImage);
     console.log(secondImage);
     console.log(thirdImage);
