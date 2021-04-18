@@ -90,56 +90,67 @@ const Passion = () => {
     const mood_pics = [
         { 
             title: "ERC Ingolstadt",
+            position: "bottom",
             subtitle: "Anno 2014",
             image: data.ERCIngolstadt.childImageSharp.fluid
         },
         { 
             title: "TSV 1860 München",
+            position: "top",
             subtitle: null,
             image: data.TSV1860.childImageSharp.fluid
         },
         { 
             title: "Daelim VT 125",
+            position: "top",
             subtitle: "Anno 1999",
             image: data.Daelim.childImageSharp.fluid
         },
         { 
-            title: "HD Forty Eight",
+            title: "Forty Eight",
+            position: "bottom",
             subtitle: "Anno 2018",
             image: data.FortyEight.childImageSharp.fluid
         },
         { 
             title: "Yamaha Fazer S2",
+            position: "top",
             subtitle: null,
             image: data.FazerS2.childImageSharp.fluid
         },
         { 
-            title: "Honda CBF 600",
+            title: "CBF 600",
+            position: "top",
             subtitle: "Anno 2008",
             image: data.CBF600.childImageSharp.fluid
         },
         { 
-            title: "Honda CBR 600 F",
+            title: "CBR 600 F",
+            position: "bottom",
             subtitle: "Anno 2002",
             image: data.CBR600.childImageSharp.fluid
         },
         { 
             title: "Metallica",
+            position: "top",
             subtitle: "Anno 2019",
             image: data.Metallica.childImageSharp.fluid
         },
         { 
             title: "Development",
+            position: "top",
             subtitle: null,
             image: data.Development.childImageSharp.fluid
         },
         { 
             title: "Islay Whiskey",
+            position: "top",
             subtitle: null,
             image: data.IslayWhiskey.childImageSharp.fluid
         },
         { 
             title: "Lars Ulrich",
+            position: "bottom",
             subtitle: "Anno 2019",
             image: data.LarsUlrich.childImageSharp.fluid
         },
@@ -157,19 +168,19 @@ const Passion = () => {
         <div className="passion" >
             <h3>Passion</h3>
             <BackgroundImage className="passion_icon" fluid={firstImage.image}>
-                <div>{firstImage.title}</div>
+                <div className={firstImage.position}>{firstImage.title}</div>
                 {firstImage.subtitle &&
                     <span>{firstImage.subtitle}</span>
                 }
             </BackgroundImage>
             <BackgroundImage className="passion_icon" fluid={secondImage.image}>
-                <div>{secondImage.title}</div>
+                <div className={secondImage.position}>{secondImage.title}</div>
                 {secondImage.subtitle &&
                     <span>{secondImage.subtitle}</span>
                 }
             </BackgroundImage>
             <BackgroundImage className="passion_icon" fluid={thirdImage.image}>
-                <div>{thirdImage.title}</div>
+                <div className={thirdImage.position}>{thirdImage.title}</div>
                 {thirdImage.subtitle &&
                     <span>{thirdImage.subtitle}</span>
                 }
