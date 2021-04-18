@@ -16,15 +16,32 @@
     }
 
     .passion_icon {
-        font-family: $display_font;
-        font-size:36px;
         height: 170px;
         line-height: 110%;
         border-top: 4px solid $first-color;
         border-left: 4px solid $first-color;
         border-bottom: 4px solid $second-color;
         border-right: 4px solid $second-color;
-        text-shadow: 2px 2px $highlight;
+        position: relative;
+        
+        div {
+            text-shadow: 2px 2px $highlight;
+            font-family: $display_font;
+            font-size:30px;
+            margin-top: 8px;
+            margin-left: 5px;
+        }
+        span {
+            display: block;
+            position: absolute;
+            font-family: $text_font;
+            bottom: 0;
+            right: 0;
+            background-color: $background-color-dark;
+            color: $font-color-light;
+            font-size: 12px;
+            padding: 1px 3px;
+        }
     }
     .passion_icon:nth-child(1), .passion_icon:nth-child(4) div {
         color: $first-color;
