@@ -6,6 +6,9 @@ a {
     text-decoration: underline;
     color: $link-color-dark;
 }
+ul {
+    list-style-type: square;
+}
 h1,
 h2,
 h3,
@@ -36,7 +39,7 @@ a + h6 {
     margin-top: 25px;
 }
 li {
-    a {
+    a, button {
         cursor: pointer;
     }
 }
