@@ -15,10 +15,10 @@ const AboutPage = () => {
                 <li><button onClick={() => scrollTo('#musik')}>Musik und Konzerte</button></li>
             </ul>
             <p>Über das Menü kannst Du unter "Themes" das passende Template auswählen, wenn Du Lust hast. Dann gibt es noch <a href="https://pure.schoettner.dev">pure.schoettner.dev</a>, einfach nur deshalb um auf grafische Gestaltung zu verzichten und zu testen, wie schnell dieses <em>Framework</em> wirklich sein kann.</p>
-            <h2 id="entwicklung">Entwicklung</h2>
+            <h2 name="entwicklung" id="entwicklung">Entwicklung</h2>
             <p>Dass doch einige Jahre ins Land gegangen sind bemerkt man spätestens, wenn man einen Lebenslauf schreibt. So kann ich in Summe auf über 20 Jahre Entwicklung zurückblicken. Anfangs sicher nur Websites und das meiste war da auch ehrliches <em>HTML</em> mit etwas <em>CSS</em>.</p>
-            <h2 id="motorradfahren">Motorradfahren</h2>
-            <h2 id="musik">Musik und Konzerte</h2>
+            <h2 name="motorrad" id="motorradfahren">Motorradfahren</h2>
+            <h2 name="musik" id="musik">Musik und Konzerte</h2>
             <a href="https://www.konzertkarotten.de">Konzertkarotten</a>
             <p></p>
         </Layout>
