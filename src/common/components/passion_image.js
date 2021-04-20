@@ -3,7 +3,6 @@ import BackgroundImage from 'gatsby-background-image'
 import { Link } from "gatsby";
 
 const PassionImage = (props) => {
-    console.log(props.image);
     return (
         <Link to={"/ueber-mich#" + props.image.target}>
             <BackgroundImage className="passion_icon" fluid={props.image.src}>
