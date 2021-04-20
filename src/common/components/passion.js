@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { graphql, useStaticQuery } from "gatsby"
 import PassionImage from './passion_image'
 
@@ -87,6 +87,17 @@ const Passion = () => {
 
         `
     )
+
+    const [hasMounted, setHasMounted] = useState(false);
+
+    useEffect(() => {
+        setHasMounted(true);
+    }, [])
+
+    if (!hasMounted) {
+        return null;
+    }
+
     const mood_pics = [
         { 
             title: "ERC Ingolstadt",
