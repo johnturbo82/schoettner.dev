@@ -6,6 +6,7 @@ import logo from "../../images/jt.svg"
 const SideBar = (props) => {
     const sites = [
         ["/", "Startseite"],
+        ["/projekte", "Projekte"],
         ["/blog", "Blog"],
         ["/ueber-mich", "Über mich"],
         ["/kontakt", "Kontakt"]

@@ -21,3 +21,22 @@ h6 {
 .left {
     float: left;
 }
+p + h1,
+p + h2,
+p + h3,
+p + h4,
+p + h5,
+p + h6,
+a + h1,
+a + h2,
+a + h3,
+a + h4,
+a + h5,
+a + h6 {
+    margin-top: 25px;
+}
+li {
+    a {
+        cursor: pointer;
+    }
+}
