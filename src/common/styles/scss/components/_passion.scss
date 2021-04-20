@@ -22,6 +22,7 @@
         border-bottom: 4px solid $second-color;
         border-right: 4px solid $second-color;
         position: relative;
+        margin-top: 20px;
         
         div {
             text-shadow: 2px 2px $highlight;
@@ -63,8 +64,5 @@
     }
     .passion_icon:nth-child(3), .passion_icon:nth-child(6) div {
         color: $third-color;
-    }
-    .passion_icon + .passion_icon{
-        margin-top: 20px;
     }
 }

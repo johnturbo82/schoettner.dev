@@ -103,66 +103,77 @@ const Passion = () => {
             title: "ERC Ingolstadt",
             position: "bottom",
             subtitle: "Anno 2014",
+            target: "ercingolstadt",
             src: data.ERCIngolstadt.childImageSharp.fluid
         },
         { 
             title: "TSV 1860 München",
             position: "top",
             subtitle: null,
+            target: "1860muenchen",
             src: data.TSV1860.childImageSharp.fluid
         },
         { 
             title: "Daelim VT 125",
             position: "bottom",
             subtitle: "Anno 1999",
+            target: "motorrad",
             src: data.Daelim.childImageSharp.fluid
         },
         { 
             title: "Forty Eight",
             position: "bottom",
             subtitle: "Anno 2018",
+            target: "motorrad",
             src: data.FortyEight.childImageSharp.fluid
         },
         { 
             title: "Yamaha Fazer S2",
             position: "top",
             subtitle: null,
+            target: "motorrad",
             src: data.FazerS2.childImageSharp.fluid
         },
         { 
             title: "CBF 600",
             position: "top",
             subtitle: "Anno 2008",
+            target: "motorrad",
             src: data.CBF600.childImageSharp.fluid
         },
         { 
             title: "CBR 600 F",
             position: "bottom",
             subtitle: "Anno 2002",
+            target: "motorrad",
             src: data.CBR600.childImageSharp.fluid
         },
         { 
             title: "Metallica",
             position: "top",
             subtitle: "Anno 2019",
+            target: "musik",
             src: data.Metallica.childImageSharp.fluid
         },
         { 
             title: "Development",
             position: "top",
             subtitle: null,
+            target: "entwicklung",
             src: data.Development.childImageSharp.fluid
         },
         { 
             title: "Islay Whiskey",
             position: "top",
             subtitle: null,
+            target: "whiskey",
             src: data.IslayWhiskey.childImageSharp.fluid
         },
         { 
             title: "Lars Ulrich",
             position: "bottom",
             subtitle: "Anno 2019",
+            target: "musik",
             src: data.LarsUlrich.childImageSharp.fluid
         },
     ]
