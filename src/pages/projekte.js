@@ -64,6 +64,7 @@ const ProjectPage = () => {
             <ContentImage src={data.qivi_desktop_terminal_neue_anfrage.childImageSharp.fluid} description="Terminal - neue Anfrage" />
             <h3>Mobile Ansichten</h3>
             <p>Die Seite und das Terminal sind komplett responsiv und damit auch in vollem Funktionsumfang auf einem Smartphone bedienbar. Anfragen können mobil neu gestellt, Tickets bearbeitet und Daten geändert werden. Alles, wie am Rechner.</p>
+            <p>Zu erwähnen bleibt noch, dass das Team von Qivi sich von einer alternativen Umsetzung des Menubuttons überzeugen lies. So ist es schon länger meine gelebte Praxis, den Menübutton in der mobilen Ansicht nach unter zu verlegen. Smartphones werden immer größer und der Daumen ist zu kurz, da erschien es mir nur logisch, den Button - gut erreichbar - nach unten zu setzen.</p>
             <div className="flex-container">
                 <ContentImage src={data.qivi_mobile_home_scroll.childImageSharp.fluid} description="Startseite mobile Ansicht" orientation="inline" />
                 <ContentImage src={data.qivi_mobile_leistungen.childImageSharp.fluid} description="Seite: Leistungen" orientation="inline" />
