@@ -59,17 +59,6 @@
     a:hover:after {
         background-color: $first-color;
     }
-    figure {
-        background-color: $first-color;
-        color: $font-color-light;
-        padding: 1px;
-        border-bottom-right-radius: 5px;
-        border-bottom-left-radius: 5px;
-    }
-    figcaption {
-        padding: 4px;
-        font-size: 90%;
-    }
 }
 .content-wide {
     flex-grow: 1;

@@ -24,6 +24,15 @@ h6 {
 .left {
     float: left;
 }
+.clear {
+    clear: both;
+}
+div + h1,
+div + h2,
+div + h3,
+div + h4,
+div + h5,
+div + h6,
 p + h1,
 p + h2,
 p + h3,
