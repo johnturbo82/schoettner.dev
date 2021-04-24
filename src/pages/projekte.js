@@ -60,8 +60,10 @@ const ProjectPage = () => {
             <p>Für individuelle Anfragen bietet die Website Klienten ein "Terminal" in unterschiedlichen Bereichen. Die komplette Kommunikation, wie auch Dokumentenaustausch findet hierbei im Terminal statt.</p>
             <p>Klienten haben einen Überblick über alle gestelten Anfragen, sowie über den Bearbeitungsstatus.</p>
             <h3>Komplette Umsetzung und Design</h3>
-            <p>Bis auf das Logo des Qivi-Kiwis habe ich die Seite inklusive Terminal gestaltet und umgesetzt. Die Seite und das Terminal sind komplett responsive und damit auch in vollem Funktionsumfang auf einem Smartphone bedienbar.</p>
+            <p>Bis auf das Logo des Qivi-Kiwis habe ich die Seite inklusive Terminal gestaltet und umgesetzt.</p>
             <ContentImage src={data.qivi_desktop_terminal_neue_anfrage.childImageSharp.fluid} description="Terminal - neue Anfrage" />
+            <h3>Mobile Ansichten</h3>
+            <p>Die Seite und das Terminal sind komplett responsiv und damit auch in vollem Funktionsumfang auf einem Smartphone bedienbar. Anfragen können mobil neu gestellt, Tickets bearbeitet und Daten geändert werden. Alles, wie am Rechner.</p>
             <div className="flex-container">
                 <ContentImage src={data.qivi_mobile_home_scroll.childImageSharp.fluid} description="Startseite mobile Ansicht" orientation="inline" />
                 <ContentImage src={data.qivi_mobile_leistungen.childImageSharp.fluid} description="Seite: Leistungen" orientation="inline" />
