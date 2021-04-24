@@ -37,7 +37,7 @@ const ProjectPage = () => {
                         }
                     }
                 }
-                qivi_mobile_terminal_start: file(relativePath: { eq: "content/qivi_mobile_home_scroll.png" }) {
+                qivi_mobile_terminal_start: file(relativePath: { eq: "content/qivi_mobile_terminal_start.png" }) {
                     childImageSharp {
                         fluid(quality: 90, maxWidth: 1200) {
                             ...GatsbyImageSharpFluid_withWebp
@@ -63,9 +63,9 @@ const ProjectPage = () => {
             <p>Bis auf das Logo des Qivi-Kiwis habe ich die Seite inklusive Terminal gestaltet und umgesetzt. Die Seite und das Terminal sind komplett responsive und damit auch in vollem Funktionsumfang auf einem Smartphone bedienbar.</p>
             <ContentImage src={data.qivi_desktop_terminal_neue_anfrage.childImageSharp.fluid} description="Terminal - neue Anfrage" />
             <div className="flex-container">
-                <ContentImage src={data.qivi_mobile_home_scroll.childImageSharp.fluid} description="Terminal - neue Anfrage" orientation="inline" />
-                <ContentImage src={data.qivi_mobile_leistungen.childImageSharp.fluid} description="Terminal - neue Anfrage" orientation="inline" />
-                <ContentImage src={data.qivi_mobile_leistungen.childImageSharp.fluid} description="Terminal - neue Anfrage" orientation="inline" />
+                <ContentImage src={data.qivi_mobile_home_scroll.childImageSharp.fluid} description="Startseite mobile Ansicht" orientation="inline" />
+                <ContentImage src={data.qivi_mobile_leistungen.childImageSharp.fluid} description="Seite: Leistungen" orientation="inline" />
+                <ContentImage src={data.qivi_mobile_terminal_start.childImageSharp.fluid} description="Terminal - Einstiegsseite" orientation="inline" />
             </div>
             <a target="_blank" rel="noreferrer" href="https://www.qivi.online">Direkt zum Projekt Qivi</a>
             <div className="clear"></div>

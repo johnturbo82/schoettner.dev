@@ -40,20 +40,17 @@
         }
     }
     .flex-container {
-        display: flex;
-        gap: 20px;
-    }
-    figure.inline {
+        display: grid;
         @include xs {
-            width: 100%;
+            grid-template-columns: repeat(1, 100%);
         }
         @include sm {
-            display: inline-block;
-            width: 50%;
+            grid-gap: 24px;
+            grid-template-columns: repeat(2, calc(50% - 12px));
         }
         @include md {
-            display: inline-block;
-            width: 33.33%;
+            grid-gap: 24px;
+            grid-template-columns: repeat(3, calc(33.33% - 16px));
         }
     }
     figcaption {
