@@ -57,8 +57,8 @@ const ProjectPage = () => {
             <ContentImage src={data.qivi_mobile_home.childImageSharp.fluid} description="Screenshot der Startseite" orientation="right" />
             <p>In enger Zusammenarbeit mit dem Team von Qivi entstand ein Onlineportal für Rechts­be­ra­tung. Qivi bietet individuelle Beratung zur Rechtsangelegenheiten, Überblicks- oder "Deepdive"-Schulungen an. Zudem führen sie einen informativen Blog vorrangig für Unternehmesgründer und Unternehmer mir aktuellen Themen rund um Rechtsprechung und Rechtsberatung.</p>
             <h3>Terminal</h3>
-            <p>Für individuelle Anfragen bietet die Website Klienten ein "Terminal" in unterschiedlichen Bereichen. Die komplette Kommunikation, wie auch Dokumentenaustausch findet hierbei im Terminal statt.</p>
-            <p>Klienten haben einen Überblick über alle gestelten Anfragen, sowie über den Bearbeitungsstatus.</p>
+            <p>Für individuelle Anfragen aus unterschiedlichen Bereichen bietet die Website Klienten ein "Terminal". Die komplette Kommunikation, wie auch Dokumentenaustausch findet hier statt.</p>
+            <p>Klienten haben einen Überblick über alle gestellten Anfragen, sowie über den Bearbeitungsstatus, können neue Anfragen an Qivi richten oder direkt mit dem bearbeitenden Anwalt sich zur Sache austauschen.</p>
             <h3>Komplette Umsetzung und Design</h3>
             <p>Bis auf das Logo des Qivi-Kiwis habe ich die Seite inklusive Terminal gestaltet und umgesetzt.</p>
             <ContentImage src={data.qivi_desktop_terminal_neue_anfrage.childImageSharp.fluid} description="Terminal - neue Anfrage" />
