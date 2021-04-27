@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby"
 import BackgroundImage from 'gatsby-background-image'
 
-const Moods = () => {
+const Moods = (props) => {
     const data = useStaticQuery(
         graphql`
             query {
@@ -41,22 +41,22 @@ const Moods = () => {
     return (
         <div className="sidebar_mood" >
             <h3>Theme</h3>
-            <a href="https://schoettner.dev" alt="schoettner.dev">
+            <a href={"https://schoettner.dev" + props.path} alt="schoettner.dev">
                 <BackgroundImage className="mood" fluid={data.schoettner.childImageSharp.fluid}>
                     <div>Software Developer</div>
                 </BackgroundImage>
             </a>
-            <a href="https://johnturbo.com" alt="johnturbo.com">
+            <a href={"https://johnturbo.com" + props.path} alt="johnturbo.com">
                 <BackgroundImage className="mood" fluid={data.johnturbo.childImageSharp.fluid}>
                     <div>Stars & Stripes</div>
                 </BackgroundImage>
             </a>
-            <a href="https://schoettner.rocks" alt="schoettner.rocks">
+            <a href={"https://schoettner.rocks" + props.path} alt="schoettner.rocks">
                 <BackgroundImage className="mood" fluid={data.jt1.childImageSharp.fluid}>
                     <div>Rock n' Roll</div>
                 </BackgroundImage>
             </a>
-            <a href="https://pure.schoettner.dev" alt="pure.schoettner.dev">
+            <a href={"https://pure.schoettner.dev" + props.path} alt="pure.schoettner.dev">
                 <BackgroundImage className="mood" fluid={data.code.childImageSharp.fluid}>
                     <div>Nerdy Feelings</div>
                 </BackgroundImage>

@@ -21,9 +21,9 @@ const SideBar = (props) => {
                     <Link to="/">
                         <img className="logo" src={logo} alt="JT1 Logo" />
                     </Link>
-                    {sites.map((val, key) => (<Link key={key} id={"menu_" + key} className={(props.path === val[0] || (props.path.includes("/blog") && val[0] === "/blog")) ? "menu-item active" : "menu-item"} href={val[0]}>{val[1]}</Link>))}
+                    {sites.map((val, key) => (<Link key={key} id={"menu_" + key} className={(props.path === val[0] || (props.path.includes("/blog") && val[0] === "/blog")) ? "menu-item active" : "menu-item"} to={val[0]}>{val[1]}</Link>))}
                 </div>
-                <Moods />
+                <Moods path={props.path} />
             </div>
         </>
     );
