@@ -59,6 +59,45 @@
     a:hover:after {
         background-color: $first-color;
     }
+
+    .social_icons {
+        a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: $background-color-dark;
+            padding: 5px;
+            border-radius: 3px;
+            border: none;
+        }
+        a + a {
+            margin-left: 10px;
+        }
+        a:after {
+            display: none;
+        }
+        a:hover:after {
+            display: none;
+        }
+        a.twitter {
+            background-color: #1DA1F2;
+        }
+        a.linkedin {
+            background-color: #0A66C2;
+        }
+        a.facebook {
+            background-color: #1877F2;
+        }
+        a.instagram {
+            background-color: #E4405F;
+        }
+        a.github {
+            background-color: #181717;
+        }
+        a.mail {
+            background-color: #EA4335;
+        }
+    }
 }
 .content-wide {
     flex-grow: 1;

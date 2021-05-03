@@ -15,91 +15,91 @@
         color: $link-color-light;
         text-decoration: none;
     }
-}
-.social_icons {
-    margin-bottom: 20px;
-
-
-    @include sm {
-        float: right;
-    }
-
-    a {
-        display: inline-block;
-        height: 44px;
-        width: 44px;
-
-        img {
-            height: 40px;
-            padding: 5px;
-            margin: 2px;
-            transition: padding 0.2s ease;
+    .social_icons {
+        margin-bottom: 20px;
+    
+    
+        @include sm {
+            float: right;
         }
-        img:hover {
-            padding: 0;
+    
+        a {
+            display: inline-block;
+            height: 44px;
+            width: 44px;
+    
+            img {
+                height: 40px;
+                padding: 5px;
+                margin: 2px;
+                transition: padding 0.2s ease;
+            }
+            img:hover {
+                padding: 0;
+            }
         }
-    }
-
-    a + a {
-        margin-left: 10px;
-    }
-
-    .gatsby:after {
-        content: '';
-        display: block;
-        background-color: #663399;
-        position: relative;
-        height: 6px;
-        width: 100%;
-    }
-    .twitter:after {
-        content: '';
-        display: block;
-        background-color: #1DA1F2;
-        position: relative;
-        height: 8px;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        width: 100%;
-    }
-    .linkedin:after {
-        content: '';
-        display: block;
-        background-color: #0A66C2;
-        position: relative;
-        height: 8px;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        width: 100%;
-    }
-    .facebook:after {
-        content: '';
-        display: block;
-        background-color: #1877F2;
-        position: relative;
-        height: 8px;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        width: 100%;
-    }
-    .instagram:after {
-        content: '';
-        display: block;
-        background-color: #E4405F;
-        position: relative;
-        height: 8px;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        width: 100%;
-    }
-    .github:after {
-        content: '';
-        display: block;
-        background-color: #181717;
-        position: relative;
-        height: 8px;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        width: 100%;
+    
+        a + a {
+            margin-left: 10px;
+        }
+    
+        .gatsby:after {
+            content: '';
+            display: block;
+            background-color: #663399;
+            position: relative;
+            height: 6px;
+            width: 100%;
+        }
+        .twitter:after {
+            content: '';
+            display: block;
+            background-color: #1DA1F2;
+            position: relative;
+            height: 8px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            width: 100%;
+        }
+        .linkedin:after {
+            content: '';
+            display: block;
+            background-color: #0A66C2;
+            position: relative;
+            height: 8px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            width: 100%;
+        }
+        .facebook:after {
+            content: '';
+            display: block;
+            background-color: #1877F2;
+            position: relative;
+            height: 8px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            width: 100%;
+        }
+        .instagram:after {
+            content: '';
+            display: block;
+            background-color: #E4405F;
+            position: relative;
+            height: 8px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            width: 100%;
+        }
+        .github:after {
+            content: '';
+            display: block;
+            background-color: #181717;
+            position: relative;
+            height: 8px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            width: 100%;
+        }
     }
 }
