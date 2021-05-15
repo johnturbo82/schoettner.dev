@@ -1,4 +1,18 @@
 .content.text {
+    a.content-image-link:after {
+        display: none;
+    }
+    a.content-image-link {
+        figure {
+            background-color: $first-color;
+            transition: background-color 0.3s ease;
+        }
+    }
+    a.content-image-link:hover {
+        figure {
+            background-color: $second-color;
+        }
+    }
     figure {
         background-color: $first-color;
         color: $font-color-light;
