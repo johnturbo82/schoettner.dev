@@ -9,6 +9,7 @@ import Content from './content'
 import Footer from './footer'
 import Instagram from './instagram'
 import '../../style.scss'
+import SimpleReactLightbox from 'simple-react-lightbox'
 
 class Layout extends React.Component {
     constructor(props) {
@@ -46,28 +47,30 @@ class Layout extends React.Component {
     render() {
 
         return (
-            <div id="container" className="site-container">
+            <SimpleReactLightbox>
+                <div id="container" className="site-container">
                 <Homebutton handleBurgerClick={this.toggleMenu} handleEscKey={this.closeMenuOnEsc} />
                 {this.state.menu_visible && (
                     <SideBar path={this.props.path} handleClose={this.closeMenu} handleEscKey={this.closeMenuOnEsc} />
                 )}
                 <SiteMeta sitetitle={this.props.sitetitle} path={this.props.path} />
-                <div id="site">
-                    <Header />
-                    <BreadCrump sitetitle={this.props.sitetitle} parent={this.props.parent} />
-                    <Content type="text">
-                        <div className="stage">
-                            {this.props.children}
-                        </div>
-                    </Content>
-                    <Content id="insta">
-                        <Instagram />
-                    </Content>
-                    <Content id="footer">
-                        <Footer />
-                    </Content>
-                </div>
-            </div >
+                    <div id="site">
+                        <Header />
+                        <BreadCrump sitetitle={this.props.sitetitle} parent={this.props.parent} />
+                        <Content type="text">
+                            <div className="stage">
+                                {this.props.children}
+                            </div>
+                        </Content>
+                        <Content id="insta">
+                            <Instagram />
+                        </Content>
+                        <Content id="footer">
+                            <Footer />
+                        </Content>
+                    </div>
+                </div >
+            </SimpleReactLightbox>
         )
     }
 }

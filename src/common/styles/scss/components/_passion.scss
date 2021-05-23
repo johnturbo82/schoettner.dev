@@ -56,13 +56,13 @@
             line-height: 100%;
         }
     }
-    .passion_icon:nth-child(1), .passion_icon:nth-child(4) div {
+    a:nth-child(1), :nth-child(4) div {
         color: $first-color;
     }
-    .passion_icon:nth-child(2), .passion_icon:nth-child(5) div {
+    a:nth-child(2), a:nth-child(5) div {
         color: $second-color;
     }
-    .passion_icon:nth-child(3), .passion_icon:nth-child(6) div {
+    a:nth-child(3), a:nth-child(6) div {
         color: $third-color;
     }
 }

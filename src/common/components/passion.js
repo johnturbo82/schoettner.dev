@@ -41,6 +41,13 @@ const Passion = () => {
                         }
                     }
                 }
+                LowRiderS: file(relativePath: { eq: "passion/LowRiderS.jpg" }) {
+                    childImageSharp {
+                        fluid(quality: 90, maxWidth: 400) {
+                            ...GatsbyImageSharpFluid_withWebp
+                        }
+                    }
+                }
                 FazerS2: file(relativePath: { eq: "passion/FazerS2.jpg" }) {
                     childImageSharp {
                         fluid(quality: 90, maxWidth: 400) {
@@ -110,7 +117,7 @@ const Passion = () => {
             title: "TSV 1860 München",
             position: "top",
             subtitle: null,
-            target: "1860muenchen",
+            target: "tsv1860muenchen",
             src: data.TSV1860.childImageSharp.fluid
         },
         { 
@@ -126,6 +133,13 @@ const Passion = () => {
             subtitle: "Anno 2018",
             target: "motorrad",
             src: data.FortyEight.childImageSharp.fluid
+        },
+        { 
+            title: "Low Rider S",
+            position: "bottom",
+            subtitle: "Anno 2021",
+            target: "motorrad",
+            src: data.LowRiderS.childImageSharp.fluid
         },
         { 
             title: "Yamaha Fazer S2",

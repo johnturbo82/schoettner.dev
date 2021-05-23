@@ -98,6 +98,14 @@
             background-color: #EA4335;
         }
     }
+
+    .preview_pic {
+        max-width: 200px;
+    }
+
+    .preview_pic + .preview_pic {
+        margin-right: 10px;
+    }
 }
 .content-wide {
     flex-grow: 1;
