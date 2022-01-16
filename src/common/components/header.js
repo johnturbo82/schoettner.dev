@@ -1,29 +1,20 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import Content from './content'
-import BackgroundImage from 'gatsby-background-image'
+import backgroundImage from "../../images/title.jpg"
 
 const Header = () => {
-    const data = useStaticQuery(graphql`
-        query {
-            site {
-                siteMetadata {
-                    title
-                }
-            }
-            background: file(relativePath: { eq: "title.jpg" }) {
-                childImageSharp {
-                    fluid(quality: 90, maxWidth: 2000) {
-                        ...GatsbyImageSharpFluid_withWebp
-                    }
-                }
-            }
-        }
-    `)
-
+	const data = useStaticQuery(graphql`{
+  			site: site {
+    			siteMetadata {
+      				title
+    			}
+  			}
+		}
+	`)
     return (
         <header>
-            <BackgroundImage className="header" fluid={data.background.childImageSharp.fluid}>
+            <div className="header" style={{backgroundImage: `url(${backgroundImage})`}}>
                 <Content>
                     <h1 className="title">
                         <Link to="/">
@@ -31,9 +22,9 @@ const Header = () => {
                         </Link>
                     </h1>
                 </Content>
-            </BackgroundImage>
+            </div>
         </header>
-    )
+    );
 }
 
 export default Header
