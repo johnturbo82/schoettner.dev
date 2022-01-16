@@ -86,9 +86,12 @@ const AboutPage = () => {
                 </a>
             </SRLWrapper>
             <div className="grid">
-                <div className="grid-item grid-item-a"></div>
-                <div className="grid-item grid-item-b"></div>
-                <div className="grid-item grid-item-c"></div>
+                <GatsbyImage
+                    image={data.CBR600_full.childImageSharp.gatsbyImageData}
+                    className="grid-item grid-item-a"
+                    objectFit="cover"
+                    objectPosition="50% 50%"
+                    alt="Erste 'große' Maschine: Honda CBR 600 F, Baujahr 1998, zuerst mit 34 PS, dann mit 98 PS - Gefahren 2001 - 2005." />
             </div>
         </Layout>
     );

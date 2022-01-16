@@ -10,6 +10,7 @@ module.exports = {
         mobile: "+49 170 / TURBO ON",
         mobileto: "tel:+491708872666",
         siteUrl: "https://schoettner.dev",
+        siteGithubUrl: "https://github.com/johnturbo82/schoettner.dev",
         lang: "de",
     },
     plugins: [

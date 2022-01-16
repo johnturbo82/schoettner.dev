@@ -20,6 +20,7 @@ const Footer = () => {
                     mailto
                     mobile
                     mobileto
+                    siteGithubUrl
                 }
             }
         }
@@ -33,7 +34,7 @@ const Footer = () => {
                 <p><a href={data.site.siteMetadata.mailto}>{data.site.siteMetadata.email}</a></p>
                 <p><a href={data.site.siteMetadata.mobileto}>{data.site.siteMetadata.mobile}</a></p>
                 <div className="social_icons">
-                    <a href="https://github.com/johnturbo82/" title="Github" className="github">
+                    <a href={data.site.siteMetadata.siteGithubUrl} title="Github" className="github">
                         <img src={Github} alt="Github" title="Github" />
                     </a>
                     <a href="https://www.linkedin.com/in/oliver-schoettner/" title="LinkedIn" className="linkedin">
