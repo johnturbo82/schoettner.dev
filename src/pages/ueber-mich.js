@@ -6,8 +6,9 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 import Layout from '../common/components/layout'
 
-const AboutPage = () => {const data = useStaticQuery(
-    graphql`{
+const AboutPage = () => {
+    const data = useStaticQuery(
+        graphql`{
   Daelim: file(relativePath: {eq: "passion/Daelim.jpg"}) {
     childImageSharp {
       gatsbyImageData(quality: 90, width: 400, layout: CONSTRAINED)
@@ -40,7 +41,7 @@ const AboutPage = () => {const data = useStaticQuery(
   }
 }
 `
-)
+    )
     return (
         <Layout sitetitle="Über mich" path="/ueber-mich">
             <h1>Über mich</h1>
@@ -84,7 +85,11 @@ const AboutPage = () => {const data = useStaticQuery(
                         alt="57, 58, 59, 60! ... und schon gibt's ein Tor." />
                 </a>
             </SRLWrapper>
-            <p></p>
+            <div className="grid">
+                <div className="grid-item grid-item-a"></div>
+                <div className="grid-item grid-item-b"></div>
+                <div className="grid-item grid-item-c"></div>
+            </div>
         </Layout>
     );
 }

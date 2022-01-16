@@ -1,0 +1,16 @@
+.grid {
+    display: grid;
+    height: 400px;
+    width: 100%;
+    background-color: $first-color;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    .grid-item-a {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: spam 4;
+        background-color: $font-color-dark;
+    }
+}
