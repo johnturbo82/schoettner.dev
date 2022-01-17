@@ -5,7 +5,7 @@ import Passion from '../common/components/passion'
 
 const IndexPage = () => {
     return (
-        <Layout sitetitle="Startseite" path="/">
+        <Layout sitetitle="Startseite" path="/" bodyclass="home">
             <div className="left right_sidebar_opposite">
                 <h1>Hi, ich bin Oliver.</h1>
                 <p>Ich bin Softwareentwickler aus Ingolstadt, Bayern.</p>

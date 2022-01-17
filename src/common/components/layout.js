@@ -45,6 +45,7 @@ class Layout extends React.Component {
     }
 
     render() {
+        console.log(this.props)
 
         return (
             <SimpleReactLightbox>
@@ -53,7 +54,7 @@ class Layout extends React.Component {
                 {this.state.menu_visible && (
                     <SideBar path={this.props.path} handleClose={this.closeMenu} handleEscKey={this.closeMenuOnEsc} />
                 )}
-                <SiteMeta sitetitle={this.props.sitetitle} path={this.props.path} />
+                <SiteMeta bodyclass={this.props.bodyclass} sitetitle={this.props.sitetitle} path={this.props.path} />
                     <div id="site">
                         <Header />
                         <BreadCrump sitetitle={this.props.sitetitle} parent={this.props.parent} />
