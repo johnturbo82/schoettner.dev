@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import TypeAnimation from 'react-type-animation';
 
@@ -21,11 +21,6 @@ const Header = () => {
         <header>
             <div className='header'>
                 <div className='header-title'>
-                    <h1 className='site-title'>
-                        <Link to='/'>
-                            {data.site.siteMetadata.title}
-                        </Link>
-                    </h1>
                     <div className='introduction'>
                         <p>Oliver Schöttner</p>
                         <TypeAnimation

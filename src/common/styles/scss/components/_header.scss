@@ -10,26 +10,10 @@
         grid-column-start: 1;
         text-align: center;
 
-        .site-title {
-            text-decoration: none;
-            margin: 36px 0 0 120px;
-            position: absolute;
-
-            a {
-                font-size: 3rem;
-                text-decoration: none;
-                text-shadow: $title-text-shadow;
-                color: $title-color;
-
-                @include xs {
-                    font-size: 2rem;
-                }
-            }
-        }
         .introduction {
             display: inline-block;
             font-family: $headline_font;
-            padding: 1.5vw 2vw;
+            padding: 1.5vw 2vw 0.5vw 2vw;
             font-size: 100px;
             font-size: 3.5vw;
             color: $first-color;
