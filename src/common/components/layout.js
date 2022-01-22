@@ -45,8 +45,6 @@ class Layout extends React.Component {
     }
 
     render() {
-        console.log(this.props)
-
         return (
             <SimpleReactLightbox>
                 <div id="container" className="site-container">

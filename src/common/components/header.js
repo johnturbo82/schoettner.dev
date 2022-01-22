@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
-import Content from './content'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import TypeAnimation from 'react-type-animation';
 

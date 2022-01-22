@@ -2,7 +2,6 @@ import React from 'react'
 import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from '../../common/components/layout'
-import ContentImage from '../../common/components/content_image'
 
 const Schoettner_devPage = () => {
 
