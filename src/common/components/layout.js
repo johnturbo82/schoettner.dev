@@ -20,6 +20,7 @@ class Layout extends React.Component {
             menu_visible: false
         }
         this.escFunction = this.escFunction.bind(this);
+        this.topbarShow = this.topbarShow.bind(this);
     }
 
     escFunction(event) {
@@ -29,9 +30,25 @@ class Layout extends React.Component {
     }
     componentDidMount = () => {
         document.addEventListener("keydown", this.escFunction, false);
+        document.addEventListener("scroll", this.topbarShow, false)
     }
     componentWillUnmount = () => {
         document.removeEventListener("keydown", this.escFunction, false);
+        document.removeEventListener("scroll", this.topbarShow, false)
+    }
+
+    topbarShow = () => {
+        var height = document.querySelector('.header').offsetHeight;
+        var scrollY = window.pageYOffset;
+        if (scrollY > (height - 60)) {
+            if (!document.querySelector('.topbar').classList.contains("active")) {
+                document.querySelector('.topbar').classList.add("active");
+            }
+        } else {
+            if (document.querySelector('.topbar').classList.contains("active")) {
+                document.querySelector('.topbar').classList.remove  ("active");
+            }
+        }
     }
 
     toggleMenu = () => {
