@@ -36,6 +36,10 @@
     .header-image {
         grid-column-start: 2;
     }
+
+    .github:after {
+        background-color: #fff !important;
+    }
 }
 
 body.home .header {

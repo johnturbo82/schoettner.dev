@@ -10,7 +10,6 @@ import Instagram from './instagram'
 import SideBar from "./sidebar";
 import SimpleReactLightbox from 'simple-react-lightbox'
 import SiteMeta from "./site_meta";
-import SocialIcons from './socialicons'
 import { Link } from 'gatsby'
 
 class Layout extends React.Component {
@@ -72,7 +71,6 @@ class Layout extends React.Component {
                         <h1 className='site-title'>
                             <Link to='/'>schoettner.dev</Link>
                         </h1>
-                        <SocialIcons />
                     </div>
                     {this.state.menu_visible && (
                         <SideBar path={this.props.path} handleClose={this.closeMenu} handleEscKey={this.closeMenuOnEsc} />

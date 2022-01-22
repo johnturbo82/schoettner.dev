@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import TypeAnimation from 'react-type-animation';
+import SocialIcons from './socialicons'
 
 const Header = () => {
     const data = useStaticQuery(graphql`{
@@ -29,6 +30,7 @@ const Header = () => {
                             wrapper="p"
                             repeat={Infinity}
                         />
+                        <SocialIcons />
                     </div>
                 </div>
                 <GatsbyImage
