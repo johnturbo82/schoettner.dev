@@ -86,18 +86,20 @@ const AboutPage = () => {
                 </a>
             </SRLWrapper>
             <div className="grid">
-                <GatsbyImage
-                    image={data.CBR600_full.childImageSharp.gatsbyImageData}
-                    className="grid-item grid-item-a"
-                    objectFit="cover"
-                    objectPosition="50% 50%"
-                    alt="Erste 'große' Maschine: Honda CBR 600 F, Baujahr 1998, zuerst mit 34 PS, dann mit 98 PS - Gefahren 2001 - 2005." />
-                <GatsbyImage
-                    image={data.CBR600_full.childImageSharp.gatsbyImageData}
-                    className="grid-item grid-item-b"
-                    objectFit="cover"
-                    objectPosition="50% 50%"
-                    alt="Erste 'große' Maschine: Honda CBR 600 F, Baujahr 1998, zuerst mit 34 PS, dann mit 98 PS - Gefahren 2001 - 2005." />
+                <div className="grid-item grid-item-a">
+                    <GatsbyImage
+                        image={data.CBR600_full.childImageSharp.gatsbyImageData}
+                        objectFit="cover"
+                        objectPosition="50% 50%"
+                        alt="Erste 'große' Maschine: Honda CBR 600 F, Baujahr 1998, zuerst mit 34 PS, dann mit 98 PS - Gefahren 2001 - 2005." />
+                </div>
+                <div className="grid-item grid-item-b">
+                    <GatsbyImage
+                        image={data.CBR600_full.childImageSharp.gatsbyImageData}
+                        objectFit="cover"
+                        objectPosition="50% 50%"
+                        alt="Erste 'große' Maschine: Honda CBR 600 F, Baujahr 1998, zuerst mit 34 PS, dann mit 98 PS - Gefahren 2001 - 2005." />
+                </div>
             </div>
         </Layout>
     );
