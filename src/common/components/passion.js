@@ -85,84 +85,84 @@ const Passion = () => {
             position: "bottom",
             subtitle: "Anno 2014",
             target: "ercingolstadt",
-            src: data.ERCIngolstadt.childImageSharp.gatsbyImageData
+            src: data.ERCIngolstadt.childImageSharp.gatsbyImageData.images.fallback.src
         },
         { 
             title: "TSV 1860 München",
             position: "top",
             subtitle: null,
             target: "tsv1860muenchen",
-            src: data.TSV1860.childImageSharp.gatsbyImageData
+            src: data.TSV1860.childImageSharp.gatsbyImageData.images.fallback.src
         },
         { 
             title: "Daelim VT 125",
             position: "bottom",
             subtitle: "Anno 1999",
             target: "motorrad",
-            src: data.Daelim.childImageSharp.gatsbyImageData
+            src: data.Daelim.childImageSharp.gatsbyImageData.images.fallback.src
         },
         { 
             title: "Forty Eight",
             position: "bottom",
             subtitle: "Anno 2018",
             target: "motorrad",
-            src: data.FortyEight.childImageSharp.gatsbyImageData
+            src: data.FortyEight.childImageSharp.gatsbyImageData.images.fallback.src
         },
         { 
             title: "Low Rider S",
             position: "bottom",
             subtitle: "Anno 2021",
             target: "motorrad",
-            src: data.LowRiderS.childImageSharp.gatsbyImageData
+            src: data.LowRiderS.childImageSharp.gatsbyImageData.images.fallback.src
         },
         { 
             title: "Yamaha Fazer S2",
             position: "top",
             subtitle: null,
             target: "motorrad",
-            src: data.FazerS2.childImageSharp.gatsbyImageData
+            src: data.FazerS2.childImageSharp.gatsbyImageData.images.fallback.src
         },
         { 
             title: "CBF 600",
             position: "top",
             subtitle: "Anno 2008",
             target: "motorrad",
-            src: data.CBF600.childImageSharp.gatsbyImageData
+            src: data.CBF600.childImageSharp.gatsbyImageData.images.fallback.src
         },
         { 
             title: "CBR 600 F",
             position: "bottom",
             subtitle: "Anno 2002",
             target: "motorrad",
-            src: data.CBR600.childImageSharp.gatsbyImageData
+            src: data.CBR600.childImageSharp.gatsbyImageData.images.fallback.src
         },
         { 
             title: "Metallica",
             position: "top",
             subtitle: "Anno 2019",
             target: "musik",
-            src: data.Metallica.childImageSharp.gatsbyImageData
+            src: data.Metallica.childImageSharp.gatsbyImageData.images.fallback.src
         },
         { 
             title: "Development",
             position: "top",
             subtitle: null,
             target: "entwicklung",
-            src: data.Development.childImageSharp.gatsbyImageData
+            src: data.Development.childImageSharp.gatsbyImageData.images.fallback.src
         },
         { 
             title: "Islay Whiskey",
             position: "top",
             subtitle: null,
             target: "whiskey",
-            src: data.IslayWhiskey.childImageSharp.gatsbyImageData
+            src: data.IslayWhiskey.childImageSharp.gatsbyImageData.images.fallback.src
         },
         { 
             title: "Lars Ulrich",
             position: "bottom",
             subtitle: "Anno 2019",
             target: "musik",
-            src: data.LarsUlrich.childImageSharp.gatsbyImageData
+            src: data.LarsUlrich.childImageSharp.gatsbyImageData.images.fallback.src
         },
     ]
     const randomGenerator = () => {

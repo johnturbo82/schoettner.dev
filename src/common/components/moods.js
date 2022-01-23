@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby"
-import BackgroundImage from 'gatsby-background-image'
 
 const Moods = (props) => {
     const data = useStaticQuery(
@@ -31,25 +30,17 @@ const Moods = (props) => {
     return (
         <div className="sidebar_mood" >
             <h3>Theme</h3>
-            <a href={"https://schoettner.dev" + props.path} alt="schoettner.dev">
-                <BackgroundImage className="mood" fluid={data.schoettner.childImageSharp.gatsbyImageData}>
-                    <div>Software Developer</div>
-                </BackgroundImage>
+            <a href={"https://schoettner.dev" + props.path} className="mood" alt="schoettner.dev" style={{ backgroundImage: `url(${data.schoettner.childImageSharp.gatsbyImageData.images.fallback.src})` }}>
+                <div>Software Developer</div>
             </a>
-            <a href={"https://johnturbo.com" + props.path} alt="johnturbo.com">
-                <BackgroundImage className="mood" fluid={data.johnturbo.childImageSharp.gatsbyImageData}>
-                    <div>Stars & Stripes</div>
-                </BackgroundImage>
+            <a href={"https://johnturbo.com" + props.path} className="mood" alt="schoettner.dev" style={{ backgroundImage: `url(${data.johnturbo.childImageSharp.gatsbyImageData.images.fallback.src})` }}>
+                <div>Stars & Stripes</div>
             </a>
-            <a href={"https://schoettner.rocks" + props.path} alt="schoettner.rocks">
-                <BackgroundImage className="mood" fluid={data.jt1.childImageSharp.gatsbyImageData}>
-                    <div>Rock n' Roll</div>
-                </BackgroundImage>
+            <a href={"https://schoettner.rocks" + props.path} className="mood" alt="schoettner.dev" style={{ backgroundImage: `url(${data.jt1.childImageSharp.gatsbyImageData.images.fallback.src})` }}>
+                <div>Rock n' Roll</div>
             </a>
-            <a href={"https://pure.schoettner.dev" + props.path} alt="pure.schoettner.dev">
-                <BackgroundImage className="mood" fluid={data.code.childImageSharp.gatsbyImageData}>
-                    <div>Nerdy Feelings</div>
-                </BackgroundImage>
+            <a href={"https://pure.schoettner.dev" + props.path} className="mood" alt="schoettner.dev" style={{ backgroundImage: `url(${data.code.childImageSharp.gatsbyImageData.images.fallback.src})` }}>
+                <div>Nerdy Feelings</div>
             </a>
         </div>
     );
