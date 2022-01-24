@@ -19,7 +19,7 @@ const SocialIcons = () => {
     `)
 
     return (
-        <div className="social_icons">
+        <div className="social-icons">
             <a href={data.site.siteMetadata.siteGithubUrl} title="Github" className="github">
                 <img src={Github} alt="Github" title="Github" />
             </a>
