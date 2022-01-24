@@ -10,6 +10,7 @@ module.exports = {
         mobile: "+49 170 / TURBO ON",
         mobileto: "tel:+491708872666",
         siteUrl: "https://schoettner.dev",
+        siteGithubUrl: "https://github.com/johnturbo82/schoettner.dev",
         lang: "de",
     },
     plugins: [
@@ -59,7 +60,7 @@ module.exports = {
         {
             resolve: 'gatsby-source-instagram-all',
             options: {
-                access_token: "IGQVJYamZA3N05JVXhqenc4VDZAsOXkxYnh6TTdfOEQ5ay1JNVNEMTl4cVFoN3BZALTQtTU1zdHhsd0ZA3Tm5tN1owdmZAjRUhsZADFFeGxSMkRPTGN1bUQ2SjRhYS11Rk40OGJkdEpqb2JIWW80UVIzYWs3bwZDZD"
+                access_token: "IGQVJWTnVCdGFhZAXJSTWc1V3ZAGM29XbHVuSjVlZAWk5WUhfUXRUU3hQb3FZAQVdNV1cyQmFNbWVpZA1UxOHZAyZAHZAOYVZAvZAnoza3Y0R3ZAPWk5DYm94ZAkQxaHB2aS1Mek9JMUprMnFMekRMM0o3T1BvNENoeQZDZD"
             }
         },
         {

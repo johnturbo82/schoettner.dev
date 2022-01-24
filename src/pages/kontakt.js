@@ -29,7 +29,7 @@ const ContactPage = () => {
         <Layout sitetitle="Kontakt" path="/kontakt">
             <h2>Kontakt</h2>
             <p>An sich ist es nicht allzuschwer mit mir Kontakt aufzunehmen. Alle hier angegebenen Möglichkeiten checke ich regelmäßig und zuverlässig. Wer mir professionell begegnen möchte, kann das gerne über LinkedIn tun, wers etwas privater möchte, nutzt eine der anderen Möglichkeiten oder E-Mail.</p>
-            <div className="social_icons">
+            <div className="social-icons">
                 <a href="https://www.linkedin.com/in/oliver-schoettner/" title="LinkedIn" className="linkedin">
                     <img src={LinkedIn} alt="LinkedIn" title="LinkedIn" />
                 </a>

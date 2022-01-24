@@ -21,6 +21,8 @@ $menu:                      $first-color;
 $title-text-shadow:         2px 2px 0 $third-color;
 $title-color:               $highlight;
 
+$content-width:             1460px;
+
 /*
 Recurring effects
 */
@@ -29,8 +31,10 @@ $box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1p
 /*
 Fonts
 */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Fascinate&family=Roboto:wght@400;700&display=swap');
-$headline_font:     'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Fascinate&family=Merriweather&display=swap');
+$headline_font:     'Merriweather', serif;
 $text_font:         'Noto Sans JP', sans-serif;
 $display_font:      'Fascinate', cursive;
 
@@ -40,16 +44,18 @@ Components
 @import "common/styles/scss/site/index";
 @import "common/styles/scss/site/responsiveness";
 @import "common/styles/scss/site/site";
-@import "common/styles/scss/components/layout";
-@import "common/styles/scss/components/footer";
-@import "common/styles/scss/components/homebutton";
-@import "common/styles/scss/components/sidebar";
-@import "common/styles/scss/components/content";
-@import "common/styles/scss/components/header";
 @import "common/styles/scss/components/breadcrump";
-@import "common/styles/scss/components/instagram";
-@import "common/styles/scss/components/passion";
 @import "common/styles/scss/components/content_image";
+@import "common/styles/scss/components/content";
+@import "common/styles/scss/components/footer";
+@import "common/styles/scss/components/grid";
+@import "common/styles/scss/components/header";
+@import "common/styles/scss/components/homebutton";
+@import "common/styles/scss/components/instagram";
+@import "common/styles/scss/components/layout";
+@import "common/styles/scss/components/sidebar";
+@import "common/styles/scss/components/slideshow";
+@import "common/styles/scss/components/socialicons";
 
 
 /*

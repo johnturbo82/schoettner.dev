@@ -14,13 +14,16 @@ const SiteMeta = (props) => {
         }
     `)
 
-    return(
-        <Helmet htmlAttributes={{
-            lang: data.site.siteMetadata.lang,
-        }}>
+    return (
+        <Helmet
+            htmlAttributes={{
+                lang: data.site.siteMetadata.lang,
+            }} bodyAttributes={{
+                class: props.bodyclass
+            }}>
             <meta charSet="utf-8" />
             <title>{props.sitetitle} | {data.site.siteMetadata.title}</title>
-            <link rel="canonical" href={"https://schoettner.dev" + props.path}/>
+            <link rel="canonical" href={"https://schoettner.dev" + props.path} />
         </Helmet>
     )
 }

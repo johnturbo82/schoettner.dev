@@ -1,15 +1,16 @@
 import React from 'react'
 
-import SiteMeta from "./site_meta";
-import Header from './header'
+import '../../style.scss'
 import BreadCrump from './breadcrump'
-import Homebutton from "./homebutton";
-import SideBar from "./sidebar";
 import Content from './content'
 import Footer from './footer'
+import Header from './header'
+import Homebutton from "./homebutton";
 import Instagram from './instagram'
-import '../../style.scss'
+import SideBar from "./sidebar";
 import SimpleReactLightbox from 'simple-react-lightbox'
+import SiteMeta from "./site_meta";
+import { Link } from 'gatsby'
 
 class Layout extends React.Component {
     constructor(props) {
@@ -18,6 +19,7 @@ class Layout extends React.Component {
             menu_visible: false
         }
         this.escFunction = this.escFunction.bind(this);
+        this.topbarShow = this.topbarShow.bind(this);
     }
 
     escFunction(event) {
@@ -27,9 +29,25 @@ class Layout extends React.Component {
     }
     componentDidMount = () => {
         document.addEventListener("keydown", this.escFunction, false);
+        document.addEventListener("scroll", this.topbarShow, false)
     }
     componentWillUnmount = () => {
         document.removeEventListener("keydown", this.escFunction, false);
+        document.removeEventListener("scroll", this.topbarShow, false)
+    }
+
+    topbarShow = () => {
+        var height = document.querySelector('.header').offsetHeight;
+        var scrollY = window.pageYOffset;
+        if (scrollY > (height - 60)) {
+            if (!document.querySelector('.topbar').classList.contains("active")) {
+                document.querySelector('.topbar').classList.add("active");
+            }
+        } else {
+            if (document.querySelector('.topbar').classList.contains("active")) {
+                document.querySelector('.topbar').classList.remove  ("active");
+            }
+        }
     }
 
     toggleMenu = () => {
@@ -45,15 +63,19 @@ class Layout extends React.Component {
     }
 
     render() {
-
         return (
             <SimpleReactLightbox>
                 <div id="container" className="site-container">
-                <Homebutton handleBurgerClick={this.toggleMenu} handleEscKey={this.closeMenuOnEsc} />
-                {this.state.menu_visible && (
-                    <SideBar path={this.props.path} handleClose={this.closeMenu} handleEscKey={this.closeMenuOnEsc} />
-                )}
-                <SiteMeta sitetitle={this.props.sitetitle} path={this.props.path} />
+                    <div className="topbar">
+                        <Homebutton handleBurgerClick={this.toggleMenu} handleEscKey={this.closeMenuOnEsc} />
+                        <h1 className='site-title'>
+                            <Link to='/'>schoettner.dev</Link>
+                        </h1>
+                    </div>
+                    {this.state.menu_visible && (
+                        <SideBar path={this.props.path} handleClose={this.closeMenu} handleEscKey={this.closeMenuOnEsc} />
+                    )}
+                    <SiteMeta bodyclass={this.props.bodyclass} sitetitle={this.props.sitetitle} path={this.props.path} />
                     <div id="site">
                         <Header />
                         <BreadCrump sitetitle={this.props.sitetitle} parent={this.props.parent} />

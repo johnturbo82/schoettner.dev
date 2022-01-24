@@ -1,39 +1,46 @@
 import React from 'react'
-import { Link, graphql, useStaticQuery } from 'gatsby'
-import Content from './content'
-import BackgroundImage from 'gatsby-background-image'
+import { graphql, useStaticQuery } from 'gatsby'
+import { GatsbyImage } from 'gatsby-plugin-image'
+import TypeAnimation from 'react-type-animation';
+import SocialIcons from './socialicons'
 
 const Header = () => {
-    const data = useStaticQuery(graphql`
-        query {
-            site {
-                siteMetadata {
-                    title
-                }
-            }
-            background: file(relativePath: { eq: "title.jpg" }) {
+    const data = useStaticQuery(graphql`{
+  			site: site {
+    			siteMetadata {
+      				title
+    			}
+  			}
+            title: file(relativePath: {eq: "title.jpg"}) {
                 childImageSharp {
-                    fluid(quality: 90, maxWidth: 2000) {
-                        ...GatsbyImageSharpFluid_withWebp
-                    }
+                    gatsbyImageData(quality: 95, layout: CONSTRAINED)
                 }
             }
-        }
-    `)
-
+		}
+	`)
     return (
         <header>
-            <BackgroundImage className="header" fluid={data.background.childImageSharp.fluid}>
-                <Content>
-                    <h1 className="title">
-                        <Link to="/">
-                            {data.site.siteMetadata.title}
-                        </Link>
-                    </h1>
-                </Content>
-            </BackgroundImage>
+            <div className='header'>
+                <div className='header-title'>
+                    <div className='introduction'>
+                        <p>Oliver Schöttner</p>
+                        <TypeAnimation
+                            cursor={true}
+                            sequence={['Softwareentwickler', 4000, 'Motorradfahrer', 4000, 'Musikenthusiast', 4000, 'Sechzger', 4000]}
+                            wrapper="p"
+                            repeat={Infinity}
+                        />
+                        <SocialIcons />
+                    </div>
+                </div>
+                <GatsbyImage
+                    className='header-image'
+                    image={data.title.childImageSharp.gatsbyImageData}
+                    alt='Titelbild'
+                />
+            </div>
         </header>
-    )
+    );
 }
 
 export default Header
