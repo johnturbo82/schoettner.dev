@@ -9,16 +9,22 @@
         background-color: $background-color-dark;
         grid-column-start: 1;
         text-align: center;
+        position: relative;
 
         .introduction {
             display: inline-block;
+            position: absolute;
             font-family: $headline_font;
             padding: 1.5vw 2vw 0.5vw 2vw;
             font-size: 100px;
             font-size: 3.5vw;
             color: $first-color;
             line-height: 3.5vw;
-            margin-top: 8vh;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            min-width: 34vw;
             border: 3px solid $first-color;
             text-align: left;
         }
@@ -45,8 +51,5 @@
 body.home {
     .header {
         height: 100vh;
-    }
-    .introduction {
-        margin-top: 30vh !important;
     }
 }

@@ -1,0 +1,118 @@
+.slideshow-container {
+    display: block;
+    @include xs {
+        width: 100%;
+    }
+    @include sm {
+        width: 100%;
+    }
+    @include md {
+        width: 350px;
+        float: right;
+        padding-left: 40px;
+        margin-left: 40px;
+        border-left: 1px solid $background-color-dark;
+    }
+
+    .slideshow {
+        margin: 0 auto;
+        overflow: hidden;
+        display: block;
+
+        h3 {
+            margin-left: 20px;
+        }
+
+        .slideshow-icon {
+            height: 170px;
+            border-top: 4px solid $first-color;
+            border-left: 4px solid $first-color;
+            border-bottom: 4px solid $second-color;
+            border-right: 4px solid $second-color;
+            position: relative;
+            margin: 20px 10px 0 10px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            div {
+                text-shadow: 2px 2px $highlight;
+                font-family: $display_font;
+                font-size: 24px;
+                line-height: 110%;
+                left: 0px;
+                display: inline-block;
+                position: absolute;
+                padding: 2px 4px;
+                background-color: rgba($color: $highlight, $alpha: 0.5);
+                border-bottom-right-radius: 4px;
+                border-top-right-radius: 4px;
+            }
+            div.top {
+                top: 4px;
+            }
+            div.bottom {
+                bottom: 28px;
+            }
+            span {
+                display: block;
+                position: absolute;
+                font-family: $text_font;
+                bottom: 0;
+                right: 0;
+                background-color: $background-color-dark;
+                color: $font-color-light;
+                font-size: 12px;
+                padding: 2px 5px;
+                line-height: 100%;
+            }
+        }
+        a:nth-child(1),
+        :nth-child(4) div {
+            color: $first-color;
+        }
+        a:nth-child(2),
+        a:nth-child(5) div {
+            color: $second-color;
+        }
+        a:nth-child(3),
+        a:nth-child(6) div {
+            color: $third-color;
+        }
+
+        .slideshowSlider {
+            white-space: nowrap;
+            transition: ease 1000ms;
+        }
+
+        .slide {
+            display: inline-block;
+
+            height: 600px;
+            width: 100%;
+            border-radius: 40px;
+        }
+
+        /* Buttons */
+
+        .slideshowDots {
+            text-align: center;
+        }
+
+        .slideshowDot {
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+
+            cursor: pointer;
+            margin: 15px 7px 0px;
+
+            background-color: $background-color-light;
+        }
+
+        .slideshowDot.active {
+            background-color: $first-color;
+        }
+    }
+}
