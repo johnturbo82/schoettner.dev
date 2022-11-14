@@ -80,6 +80,10 @@
             color: $third-color;
         }
 
+        a::after {
+            display: none;
+        }
+
         .slideshowSlider {
             white-space: nowrap;
             transition: ease 1000ms;

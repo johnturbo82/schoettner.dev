@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
-import TypeAnimation from 'react-type-animation';
+import { TypeAnimation } from 'react-type-animation';
 import SocialIcons from './socialicons'
 
 const Header = () => {

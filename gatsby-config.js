@@ -14,12 +14,6 @@ module.exports = {
         lang: "de",
     },
     plugins: [
-        {
-            resolve: "gatsby-source-wordpress",
-            options: {
-                url: "https://www.jt1.rocks/graphql",
-            },
-        },
         "gatsby-plugin-sass",
         "gatsby-plugin-gatsby-cloud",
         "gatsby-plugin-image",
@@ -60,7 +54,7 @@ module.exports = {
         {
             resolve: 'gatsby-source-instagram-all',
             options: {
-                access_token: "IGQVJWTnVCdGFhZAXJSTWc1V3ZAGM29XbHVuSjVlZAWk5WUhfUXRUU3hQb3FZAQVdNV1cyQmFNbWVpZA1UxOHZAyZAHZAOYVZAvZAnoza3Y0R3ZAPWk5DYm94ZAkQxaHB2aS1Mek9JMUprMnFMekRMM0o3T1BvNENoeQZDZD"
+                access_token: "IGQVJWU1dqT0c1RS1TWVlWeXVyY1MyY2hvbTRsZATJ4S3hOZA1VZAOERRamdrNk5WUFJnVjg5dS16a0ZAwdDRWMjAtNVBhRGF1c0dtek1xN1pHbGpHWktiTXZAQdmlaLTVBbzRreVpkalI2czl4akpLeWpjNAZDZD"
             }
         },
         {

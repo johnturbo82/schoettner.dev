@@ -8,7 +8,6 @@ import Header from './header'
 import Homebutton from "./homebutton";
 import Instagram from './instagram'
 import SideBar from "./sidebar";
-import SimpleReactLightbox from 'simple-react-lightbox'
 import SiteMeta from "./site_meta";
 import { Link } from 'gatsby'
 
@@ -64,7 +63,7 @@ class Layout extends React.Component {
 
     render() {
         return (
-            <SimpleReactLightbox>
+            <div>
                 <div id="container" className="site-container">
                     <div className="topbar">
                         <Homebutton handleBurgerClick={this.toggleMenu} handleEscKey={this.closeMenuOnEsc} />
@@ -92,7 +91,7 @@ class Layout extends React.Component {
                         </Content>
                     </div>
                 </div >
-            </SimpleReactLightbox>
+            </div>
         )
     }
 }

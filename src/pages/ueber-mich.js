@@ -1,7 +1,6 @@
 import React from 'react'
 import { graphql, useStaticQuery } from "gatsby"
 import scrollTo from 'gatsby-plugin-smoothscroll'
-import { SRLWrapper } from "simple-react-lightbox";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 import Layout from '../common/components/layout'
@@ -59,7 +58,7 @@ const AboutPage = () => {
             <h2 name="entwicklung" id="entwicklung">Entwicklung</h2>
             <p>Dass doch einige Jahre ins Land gegangen sind bemerkt man spätestens, wenn man einen Lebenslauf schreibt. So kann ich in Summe auf über 20 Jahre Entwicklung zurückblicken. Anfangs sicher nur Websites und das meiste war da auch ehrliches <em>HTML</em> mit etwas <em>CSS</em>.</p>
             <h2 name="motorrad" id="motorrad">Motorradfahren</h2>
-            <SRLWrapper>
+            <div>
                 <a className="click_to_view" href={data.CBR600_full.childImageSharp.gatsbyImageData.srcWebp}>
                     <GatsbyImage
                         image={data.CBR600.childImageSharp.gatsbyImageData}
@@ -72,19 +71,19 @@ const AboutPage = () => {
                         className="preview_pic"
                         alt="Erstes Motorrad mit 125 ccm: Daelim VT 125 - Gefahren 1999 - 2000." />
                 </a>
-            </SRLWrapper>
+            </div>
             <h2 name="musik" id="musik">Musik und Konzerte</h2>
             <h2 name="whiskey" id="whiskey">Whiskey</h2>
             <h2 name="ercingolstadt" id="ercingolstadt">ERC Ingolstadt</h2>
             <h2 name="tsv1860muenchen" id="tsv1860muenchen">TSV 1860 München</h2>
-            <SRLWrapper>
+            <div>
                 <a className="click_to_view" href={data.TSV1860_full.childImageSharp.gatsbyImageData.srcWebp}>
                     <GatsbyImage
                         image={data.TSV1860.childImageSharp.gatsbyImageData}
                         className="preview_pic"
                         alt="57, 58, 59, 60! ... und schon gibt's ein Tor." />
                 </a>
-            </SRLWrapper>
+            </div>
             <div className="grid">
                 <div className="grid-item grid-item-a">
                     <GatsbyImage

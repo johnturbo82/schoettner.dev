@@ -31,9 +31,28 @@ $box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1p
 /*
 Fonts
 */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@font-face {
+    font-family: 'Fascinate';
+    src: url(./fonts/Fascinate/Fascinate-Regular.ttf);
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Fascinate&family=Merriweather&display=swap');
+@font-face {
+    font-family: 'Merriweather';
+    src: url(./fonts/Merriweather/Merriweather-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Noto Sans JP';
+    src: url(./fonts/Noto_Sans/NotoSans-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans JP';
+    src: url(./fonts/Noto_Sans/NotoSans-Bold.ttf);
+    font-weight: bold;
+}
+
 $headline_font:     'Merriweather', serif;
 $text_font:         'Noto Sans JP', sans-serif;
 $display_font:      'Fascinate', cursive;
