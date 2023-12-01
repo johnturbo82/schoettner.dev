@@ -64,7 +64,7 @@ const config: GatsbyConfig = {
         {
             resolve: "gatsby-source-instagram-all",
             options: {
-                access_token: "$INSTAGRAM_TOKEN",
+                access_token: process.env.INSTAGRAM_TOKEN,
             }
         },
 	]
