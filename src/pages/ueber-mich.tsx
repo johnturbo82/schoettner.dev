@@ -2,8 +2,8 @@ import React from 'react'
 import { graphql, useStaticQuery } from "gatsby"
 import scrollTo from 'gatsby-plugin-smoothscroll'
 import { GatsbyImage } from "gatsby-plugin-image";
+import Layout from '../components/Layout';
 
-import Layout from '../common/components/layout'
 
 const AboutPage = () => {
     const data = useStaticQuery(
@@ -55,9 +55,9 @@ const AboutPage = () => {
                 <li><button onClick={() => scrollTo('#tsv1860muenchen')}>TSV 1860 München</button></li>
             </ul>
             <p>Über das Menü kannst Du unter "Themes" das passende Template auswählen, wenn Du Lust hast. Dann gibt es noch <a href="https://pure.schoettner.dev">pure.schoettner.dev</a>, einfach nur deshalb um auf grafische Gestaltung zu verzichten und zu testen, wie schnell dieses <em>Framework</em> wirklich sein kann.</p>
-            <h2 name="entwicklung" id="entwicklung">Entwicklung</h2>
+            <h2 id="entwicklung">Entwicklung</h2>
             <p>Dass doch einige Jahre ins Land gegangen sind bemerkt man spätestens, wenn man einen Lebenslauf schreibt. So kann ich in Summe auf über 20 Jahre Entwicklung zurückblicken. Anfangs sicher nur Websites und das meiste war da auch ehrliches <em>HTML</em> mit etwas <em>CSS</em>.</p>
-            <h2 name="motorrad" id="motorrad">Motorradfahren</h2>
+            <h2 id="motorrad">Motorradfahren</h2>
             <div>
                 <a className="click_to_view" href={data.CBR600_full.childImageSharp.gatsbyImageData.srcWebp}>
                     <GatsbyImage
@@ -72,10 +72,10 @@ const AboutPage = () => {
                         alt="Erstes Motorrad mit 125 ccm: Daelim VT 125 - Gefahren 1999 - 2000." />
                 </a>
             </div>
-            <h2 name="musik" id="musik">Musik und Konzerte</h2>
-            <h2 name="whiskey" id="whiskey">Whiskey</h2>
-            <h2 name="ercingolstadt" id="ercingolstadt">ERC Ingolstadt</h2>
-            <h2 name="tsv1860muenchen" id="tsv1860muenchen">TSV 1860 München</h2>
+            <h2 id="musik">Musik und Konzerte</h2>
+            <h2 id="whiskey">Whiskey</h2>
+            <h2 id="ercingolstadt">ERC Ingolstadt</h2>
+            <h2 id="tsv1860muenchen">TSV 1860 München</h2>
             <div>
                 <a className="click_to_view" href={data.TSV1860_full.childImageSharp.gatsbyImageData.srcWebp}>
                     <GatsbyImage

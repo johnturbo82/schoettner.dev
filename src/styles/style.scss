@@ -33,23 +33,23 @@ Fonts
 */
 @font-face {
     font-family: 'Fascinate';
-    src: url(./fonts/Fascinate/Fascinate-Regular.ttf);
+    src: url(../assets/fonts/Fascinate/Fascinate-Regular.ttf);
 }
 
 @font-face {
     font-family: 'Merriweather';
-    src: url(./fonts/Merriweather/Merriweather-Regular.ttf);
+    src: url(../assets/fonts/Merriweather/Merriweather-Regular.ttf);
 }
 
 @font-face {
     font-family: 'Noto Sans JP';
-    src: url(./fonts/Noto_Sans/NotoSans-Regular.ttf);
+    src: url(../assets/fonts/Noto_Sans/NotoSans-Regular.ttf);
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Noto Sans JP';
-    src: url(./fonts/Noto_Sans/NotoSans-Bold.ttf);
+    src: url(../assets/fonts/Noto_Sans/NotoSans-Bold.ttf);
     font-weight: bold;
 }
 
@@ -60,21 +60,21 @@ $display_font:      'Fascinate', cursive;
 /*
 Components
 */
-@import "common/styles/scss/site/index";
-@import "common/styles/scss/site/responsiveness";
-@import "common/styles/scss/site/site";
-@import "common/styles/scss/components/breadcrump";
-@import "common/styles/scss/components/content_image";
-@import "common/styles/scss/components/content";
-@import "common/styles/scss/components/footer";
-@import "common/styles/scss/components/grid";
-@import "common/styles/scss/components/header";
-@import "common/styles/scss/components/homebutton";
-@import "common/styles/scss/components/instagram";
-@import "common/styles/scss/components/layout";
-@import "common/styles/scss/components/sidebar";
-@import "common/styles/scss/components/slideshow";
-@import "common/styles/scss/components/socialicons";
+@import "./site/index";
+@import "./site/responsiveness";
+@import "./site/site";
+@import "./components/breadcrump";
+@import "./components/content_image";
+@import "./components/content";
+@import "./components/footer";
+@import "./components/grid";
+@import "./components/header";
+@import "./components/homebutton";
+@import "./components/instagram";
+@import "./components/layout";
+@import "./components/sidebar";
+@import "./components/slideshow";
+@import "./components/socialicons";
 
 
 /*

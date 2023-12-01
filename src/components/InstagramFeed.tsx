@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import { GatsbyImage } from "gatsby-plugin-image";
 
-const Instagram = () => {
+const InstagramFeed = () => {
     const insta = useStaticQuery(graphql`{
   allInstagramContent(limit: 12, sort: {fields: timestamp, order: DESC}) {
     edges {
@@ -22,7 +22,7 @@ const Instagram = () => {
 `)
     return (
         <div className="insta-feed">
-            {insta.allInstagramContent.edges.map((edge) => {
+            {insta.allInstagramContent.edges.map((edge: any) => {
                 return (
                     <div key={edge.node.id} className="insta-feed-post">
                         <a href={edge.node.permalink} title={edge.node.caption} target="_blank" rel="noreferrer">
@@ -43,4 +43,4 @@ const Instagram = () => {
     );
 }
 
-export default Instagram
+export default InstagramFeed

@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import { TypeAnimation } from 'react-type-animation';
-import SocialIcons from './socialicons'
+import SocialIcons from './SocialIcons'
 
 const Header = () => {
     const data = useStaticQuery(graphql`{
@@ -36,7 +36,7 @@ const Header = () => {
                 <GatsbyImage
                     className='header-image'
                     image={data.title.childImageSharp.gatsbyImageData}
-                    alt='Titelbild'
+                    alt='Oliver Schöttner'
                 />
             </div>
         </header>

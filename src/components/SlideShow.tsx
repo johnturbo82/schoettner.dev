@@ -74,7 +74,7 @@ const SlideShow = () => {
             {
                 title: "ERC Ingolstadt",
                 position: "bottom",
-                subtitle: "Anno 2014",
+                subtitle: "2014",
                 target: "ercingolstadt",
                 src: data.ERCIngolstadt.childImageSharp.gatsbyImageData.images.fallback.src
             },
@@ -88,7 +88,7 @@ const SlideShow = () => {
             {
                 title: "Daelim VT 125",
                 position: "bottom",
-                subtitle: "Anno 1999",
+                subtitle: "1999",
                 target: "motorrad",
                 src: data.Daelim.childImageSharp.gatsbyImageData.images.fallback.src
             }
@@ -97,14 +97,14 @@ const SlideShow = () => {
             {
                 title: "Forty Eight",
                 position: "bottom",
-                subtitle: "Anno 2018",
+                subtitle: "2018",
                 target: "motorrad",
                 src: data.FortyEight.childImageSharp.gatsbyImageData.images.fallback.src
             },
             {
                 title: "Low Rider S",
                 position: "bottom",
-                subtitle: "Anno 2021",
+                subtitle: "2021",
                 target: "motorrad",
                 src: data.LowRiderS.childImageSharp.gatsbyImageData.images.fallback.src
             },
@@ -120,21 +120,21 @@ const SlideShow = () => {
             {
                 title: "CBF 600",
                 position: "top",
-                subtitle: "Anno 2008",
+                subtitle: "2008",
                 target: "motorrad",
                 src: data.CBF600.childImageSharp.gatsbyImageData.images.fallback.src
             },
             {
                 title: "CBR 600 F",
                 position: "bottom",
-                subtitle: "Anno 2002",
+                subtitle: "2002",
                 target: "motorrad",
                 src: data.CBR600.childImageSharp.gatsbyImageData.images.fallback.src
             },
             {
                 title: "Metallica",
                 position: "top",
-                subtitle: "Anno 2019",
+                subtitle: "2019",
                 target: "musik",
                 src: data.Metallica.childImageSharp.gatsbyImageData.images.fallback.src
             }
@@ -157,7 +157,7 @@ const SlideShow = () => {
             {
                 title: "Lars Ulrich",
                 position: "bottom",
-                subtitle: "Anno 2019",
+                subtitle: "2019",
                 target: "musik",
                 src: data.LarsUlrich.childImageSharp.gatsbyImageData.images.fallback.src
             }
@@ -167,7 +167,7 @@ const SlideShow = () => {
     const delay = 5000;
 
     const [index, setIndex] = useState(0);
-    const timeoutRef = useRef(null);
+    const timeoutRef = useRef(undefined);
 
     function resetTimeout() {
         if (timeoutRef.current) {

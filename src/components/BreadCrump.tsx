@@ -1,7 +1,12 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-const BreadCrump = (props) => {
+type BreadCrumpProps = {
+    parent?: string;
+    sitetitle?: string;
+}
+
+const BreadCrump = (props: BreadCrumpProps) => {
     return (
         <div className="breadcrump-container">
             <div className="breadcrump">
