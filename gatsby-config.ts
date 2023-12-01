@@ -64,7 +64,7 @@ const config: GatsbyConfig = {
         {
             resolve: "gatsby-source-instagram-all",
             options: {
-                access_token: "IGQWRQZAERPdnV6aWwwaTlrV0Y3VzNjLVprdUFVQXp6SWIwVEo1SFFwY1dMYTVuU21tdTlGR1J1SDVhYVJPc2Mycm43aWFfUVdzaTN5YXp3NmVhVlptTWN1ZADBhUV9ibmh3VmJFQXdxSk9mUWFVbWNLQUxOby10dDgZD",
+                access_token: "$INSTAGRAM_TOKEN",
             }
         },
 	]
