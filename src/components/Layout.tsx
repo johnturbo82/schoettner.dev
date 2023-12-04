@@ -22,6 +22,7 @@ const Layout = (props: LayoutProps) => {
 
     const [menuVisible, setMenuVisible] = useState(false);
     const [siteTheme, setSiteTheme] = useState("schoettner.dev");
+    const [theme, setTheme] = useState();
 
     const handleUserKeyPress = useCallback((event: { key: any; keyCode: any }) => {
         const { key, keyCode } = event;
@@ -32,7 +33,13 @@ const Layout = (props: LayoutProps) => {
     }, []);
 
     useEffect(() => {
-        setSiteTheme(window ? window.location.host : "schoettner.dev");
+        if (window) {
+            setSiteTheme(window.location.host);
+            setTheme(rocksStyles);
+        } else {
+            setSiteTheme("schoettner.dev");
+            setTheme(devStyles);
+        }
         window.addEventListener("keydown", handleUserKeyPress);
         window.addEventListener('scroll', handleScroll);
         return () => {
@@ -62,9 +69,7 @@ const Layout = (props: LayoutProps) => {
     }
 
     return (
-        <>
-            {siteTheme === "schoettner.rocks" && <div className={rocksStyles}></div>}
-            {siteTheme === "schoettner.dev" && <div className={devStyles}></div>}
+        <div className={devStyles}>
             <div id="container" className="site-container">
                 <div className="topbar">
                     <HomeButton burgerClick={toggleMenu} />
@@ -91,7 +96,7 @@ const Layout = (props: LayoutProps) => {
                     </Content>
                 </div>
             </div >
-        </>
+        </div>
     )
 }
 
