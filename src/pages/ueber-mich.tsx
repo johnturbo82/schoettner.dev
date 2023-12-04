@@ -111,6 +111,6 @@ export const Head: HeadFC = () => (
 		<html lang="de" />
 		<title>Über mich</title>
 		<body className="about_me" />
-		<link rel="canonical" href={window.location.host + "/ueber-mich"} />
+		<link rel="canonical" href={"https://" + (window ? window.location.host : "schoettner.dev") + "/ueber-mich"} />
 	</>
 )

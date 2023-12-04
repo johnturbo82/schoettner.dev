@@ -20,7 +20,7 @@ type LayoutProps = {
 const Layout = (props: LayoutProps) => {
 
     const [menuVisible, setMenuVisible] = useState(false);
-    const siteTheme = window.location.host === "localhost:8000" ? "schoettner.rocks" : window.location.host;
+    const [siteTheme, setSiteTheme] = useState("schoettner.dev");
 
     const handleUserKeyPress = useCallback((event: { key: any; keyCode: any }) => {
         const { key, keyCode } = event;
@@ -31,6 +31,7 @@ const Layout = (props: LayoutProps) => {
     }, []);
 
     useEffect(() => {
+        setSiteTheme(window ? window.location.host : "schoettner.dev");
         window.addEventListener("keydown", handleUserKeyPress);
         window.addEventListener('scroll', handleScroll);
         return () => {
