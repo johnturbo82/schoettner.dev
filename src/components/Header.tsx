@@ -11,7 +11,12 @@ const Header = () => {
       				title
     			}
   			}
-            title: file(relativePath: {eq: "title.jpg"}) {
+            schoettnerDev: file(relativePath: {eq: "schoettner.dev.title.jpg"}) {
+                childImageSharp {
+                    gatsbyImageData(quality: 95, layout: CONSTRAINED)
+                }
+            }
+            schoettnerRocks: file(relativePath: {eq: "schoettner.rocks.title.jpg"}) {
                 childImageSharp {
                     gatsbyImageData(quality: 95, layout: CONSTRAINED)
                 }
@@ -26,18 +31,34 @@ const Header = () => {
                         <p>Oliver Schöttner</p>
                         <TypeAnimation
                             cursor={true}
-                            sequence={['Softwareentwickler', 4000, 'Motorradfahrer', 4000, 'Musikenthusiast', 4000, 'Sechzger', 4000]}
+                            sequence={['Softwareentwickler', 4000, 'Motorradfahrer', 4000, 'Musikenthusiast', 4000, 'Ingolstädter', 4000]}
                             wrapper="p"
                             repeat={Infinity}
                         />
                         <SocialIcons />
                     </div>
                 </div>
-                <GatsbyImage
-                    className='header-image'
-                    image={data.title.childImageSharp.gatsbyImageData}
-                    alt='Oliver Schöttner'
-                />
+                {window.location.host === "localhost:8000" &&
+                    <GatsbyImage
+                        className='header-image'
+                        image={data.schoettnerRocks.childImageSharp.gatsbyImageData}
+                        alt='Oliver Schöttner'
+                    />
+                }
+                {window.location.host === "schoettner.dev" &&
+                    <GatsbyImage
+                        className='header-image'
+                        image={data.schoettnerDev.childImageSharp.gatsbyImageData}
+                        alt='Oliver Schöttner'
+                    />
+                }
+                {window.location.host === "schoettner.rocks" &&
+                    <GatsbyImage
+                        className='header-image'
+                        image={data.schoettnerRocks.childImageSharp.gatsbyImageData}
+                        alt='Oliver Schöttner'
+                    />
+                }
             </div>
         </header>
     );
