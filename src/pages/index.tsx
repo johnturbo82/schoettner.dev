@@ -15,7 +15,8 @@ const IndexPage: React.FC<PageProps> = () => {
 				<p>Meine Freizeit verbringe ich im Sommer gerne auf einem Motorrad oder bei Konzerten.</p>
 				<p>Sollte ich zu Hause auf der Couch sein, läuft Eishockey oder Fussball <em>oder beides</em>.</p>
 				<p>Diese Seite gibt's nur, weil viele Neugierige die Domain meiner Email-Adresse in den Browser tippen und dann enttäuscht sind, dass es keinen Inhalt gibt. Solltest Du auch auf diesem Wege zu mir gekommen sein: <em>Fühl Dich gerne angesprochen!</em></p>
-				<p>Solltest Du ein Recruiter sein, hast du eh nicht bis hier gelesen.</p>
+				<p>Solltest Du ein Recruiter sein, findest Du einen Weg mich zu kontaktieren.</p>
+				<p>Falls ich mal wieder einen Vortrag halten soll, schreib' mir gerne eine E-Mail.</p>
 			</div>
 			<SlideShow />
 		</Layout>
