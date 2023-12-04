@@ -1,6 +1,5 @@
 import React, { ReactNode, useCallback, useEffect, useState } from 'react'
 
-import '../styles/style.scss'
 import { Link } from 'gatsby'
 import Content from './Content';
 import Footer from './Footer';
@@ -9,6 +8,7 @@ import BreadCrump from './BreadCrump';
 import HomeButton from './HomeButton';
 import SideBar from './SideBar';
 import InstagramFeed from './InstagramFeed';
+import '../styles/schoettner.dev.scss';
 
 type LayoutProps = {
     children: ReactNode;
@@ -20,12 +20,14 @@ type LayoutProps = {
 const Layout = (props: LayoutProps) => {
 
     const [menuVisible, setMenuVisible] = useState(false);
+    const siteTheme = window.location.host === "localhost:8000" ? "schoettner.rocks" : window.location.host;
 
     const handleUserKeyPress = useCallback((event: { key: any; keyCode: any }) => {
         const { key, keyCode } = event;
         if (keyCode === 27) {
             closeMenu();
         }
+        handleScroll();
     }, []);
 
     useEffect(() => {
@@ -58,12 +60,12 @@ const Layout = (props: LayoutProps) => {
     }
 
     return (
-        <div>
+        <>
             <div id="container" className="site-container">
                 <div className="topbar">
                     <HomeButton burgerClick={toggleMenu} />
                     <h1 className='site-title'>
-                        <Link to='/'>schoettner.dev</Link>
+                        <Link to='/'>{siteTheme}</Link>
                     </h1>
                 </div>
                 {menuVisible && (
@@ -85,8 +87,8 @@ const Layout = (props: LayoutProps) => {
                     </Content>
                 </div>
             </div >
-        </div>
+        </>
     )
 }
 
-export default Layout
+export default Layout;
