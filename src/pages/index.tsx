@@ -10,11 +10,12 @@ const IndexPage: React.FC<PageProps> = () => {
 				<h1>Hi, ich bin Oliver.</h1>
 				<p>Ich bin Softwareentwickler aus Ingolstadt, Bayern.</p>
 				<p>Am liebsten mache ich <em>Webentwicklung</em>, wenn es die meiste Zeit auch nur noch ein Hobby ist.</p>
-				<p>Ich arbeite aktuell bei <a target="_blank" rel="noreferrer" href="https://cariad.technology/">CARIAD SE</a>, dem Softwarehaus des Volkswagen Konzerns. Dort mache ich vor allem <em>Python</em>, aber auch etwas Frontend <em>React</em>.</p>
-				<p>Bei meinem letzten Arbeitgeber BFFT Gesellschaft für Fahrzeugtechnik mbH, jetzt EDAG Engineering GmbH, habe ich noch viel <em>PHP </em> und <em>C#</em> gemacht. Das waren noch Zeiten...</p>
+				<p>Ich arbeite aktuell bei <a target="_blank" rel="noreferrer" href="https://cariad.technology/">CARIAD SE</a>, dem Softwarehaus des Volkswagen Konzerns. Dort mache ich vor allem <em>Python</em>, aber auch etwas Frontend mit <em>React</em>.</p>
+				<p>Bei meinen letzten Arbeitgebern habe ich noch viel <em>C#</em>, <em>Java</em> und auch <em>PHP</em> gemacht. Das waren noch Zeiten...</p>
 				<p>Meine Freizeit verbringe ich im Sommer gerne auf einem Motorrad oder bei Konzerten.</p>
-				<p>Sollte ich zu Hause auf der Couch sein, läuft Eishockey oder Fussball <em>(oder beides)</em> oder eine Netflixserie.</p>
-				<p>Diese Seite gibt's nur, weil viele Neugierige die Domain meiner Email-Adresse in den Browser tippen und dann enttäuscht sind, dass es keinen Inhalt gibt. Solltest Du auch auf diesem Wege zu mir gekommen sein: <em>Hallo!</em></p>
+				<p>Sollte ich zu Hause auf der Couch sein, läuft Eishockey oder Fussball <em>oder beides</em>.</p>
+				<p>Diese Seite gibt's nur, weil viele Neugierige die Domain meiner Email-Adresse in den Browser tippen und dann enttäuscht sind, dass es keinen Inhalt gibt. Solltest Du auch auf diesem Wege zu mir gekommen sein: <em>Fühl Dich gerne angesprochen!</em></p>
+				<p>Solltest Du ein Recruiter sein, hast du eh nicht bis hier gelesen.</p>
 			</div>
 			<SlideShow />
 		</Layout>

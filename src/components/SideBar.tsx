@@ -22,7 +22,6 @@ const SideBar = (props: SideBarProps) => {
         <>
             <div className="overlay" aria-label="Close Menu" role="button" onClick={props.handleClose} tabIndex={-2}></div>
             <div className="sidebar">
-                <span className="close" title="Close Menu" role="button" onClick={props.handleClose} tabIndex={-1}>x</span>
                 <div className="sidebar_nav" >
                     <Link to="/">
                         <img className="logo" src={logo.toString()} alt="JT1 Logo" />

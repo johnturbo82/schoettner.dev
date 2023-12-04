@@ -45,7 +45,7 @@
 
     @include xs {
         font-size: 5vw;
-        margin: 7px;
+        margin: 15px;
     }
 
     a {
@@ -56,7 +56,6 @@
 
         @include xs {
             font-size: 5vw;
-            margin: 8px 0 0 10px;
         }
     }
 }

@@ -66,11 +66,23 @@ const SlideShow = () => {
                 gatsbyImageData(quality: 90, width: 400, layout: CONSTRAINED)
                 }
             }
+            RoadGlide: file(relativePath: {eq: "passion/Road_Glide.jpeg"}) {
+                childImageSharp {
+                gatsbyImageData(quality: 90, width: 400, layout: CONSTRAINED)
+                }
+            }
         }`
     )
 
     const passion_sets = [
         [
+            {
+                title: "Road Glide Special",
+                position: "top",
+                subtitle: "2023",
+                target: "motorrad",
+                src: data.RoadGlide.childImageSharp.gatsbyImageData.images.fallback.src
+            },
             {
                 title: "ERC Ingolstadt",
                 position: "bottom",
@@ -85,13 +97,6 @@ const SlideShow = () => {
                 target: "tsv1860muenchen",
                 src: data.TSV1860.childImageSharp.gatsbyImageData.images.fallback.src
             },
-            {
-                title: "Daelim VT 125",
-                position: "bottom",
-                subtitle: "1999",
-                target: "motorrad",
-                src: data.Daelim.childImageSharp.gatsbyImageData.images.fallback.src
-            }
         ],
         [
             {
@@ -161,7 +166,16 @@ const SlideShow = () => {
                 target: "musik",
                 src: data.LarsUlrich.childImageSharp.gatsbyImageData.images.fallback.src
             }
-        ]
+        ],
+        // [
+        //     {
+        //         title: "Daelim VT 125",
+        //         position: "bottom",
+        //         subtitle: "1999",
+        //         target: "motorrad",
+        //         src: data.Daelim.childImageSharp.gatsbyImageData.images.fallback.src
+        //     }
+        // ]
     ]
 
     const delay = 5000;

@@ -34,7 +34,7 @@
             text-align: left;
 
             @include xs() {
-                width: 90%;
+                width: calc(100% - 30px);
                 font-size: 30px;
                 padding: 20px;
             }
