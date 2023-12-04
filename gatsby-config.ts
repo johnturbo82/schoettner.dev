@@ -31,8 +31,8 @@ const config: GatsbyConfig = {
 				name: "Schoettner Dev",
 				short_name: "JT1 Dev",
 				start_url: "/",
-				background_color: "#12355b",
-				theme_color: "#ff6978",
+				background_color: "#2f4c58",
+				theme_color: "#63a583",
 				display: "standalone",
 				icon: "src/assets/images/jt.png",
 			},
@@ -61,12 +61,12 @@ const config: GatsbyConfig = {
 				},
 			},
 		},
-        {
-            resolve: "gatsby-source-instagram-all",
-            options: {
-                access_token: process.env.INSTAGRAM_TOKEN,
-            }
-        },
+		{
+			resolve: "gatsby-source-instagram-all",
+			options: {
+				access_token: process.env.INSTAGRAM_TOKEN,
+			}
+		},
 	]
 };
 
