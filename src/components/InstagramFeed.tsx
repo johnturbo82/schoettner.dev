@@ -4,7 +4,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 const InstagramFeed = () => {
     const insta = useStaticQuery(graphql`{
-  allInstagramContent(limit: 12, sort: {fields: timestamp, order: DESC}) {
+  allInstagramContent(limit: 12, sort: {timestamp: DESC}) {
     edges {
       node {
         id
@@ -18,8 +18,7 @@ const InstagramFeed = () => {
       }
     }
   }
-}
-`)
+}`)
     return (
         <div className="insta-feed">
             {insta.allInstagramContent.edges.map((edge: any) => {

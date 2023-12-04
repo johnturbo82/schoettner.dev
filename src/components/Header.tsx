@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import { TypeAnimation } from 'react-type-animation';
 import SocialIcons from './SocialIcons'
 
 const Header = () => {
+    const [siteTheme, setSiteTheme] = useState("schoettner.dev");
+
+    useEffect(() => {
+        setSiteTheme(window ? window.location.host : "schoettner.dev");
+    }, []);
+
     const data = useStaticQuery(graphql`{
   			site: site {
     			siteMetadata {
@@ -38,21 +44,21 @@ const Header = () => {
                         <SocialIcons />
                     </div>
                 </div>
-                {window.location.host === "localhost:8000" &&
+                {siteTheme === "localhost:8000" &&
                     <GatsbyImage
                         className='header-image'
                         image={data.schoettnerRocks.childImageSharp.gatsbyImageData}
                         alt='Oliver Schöttner'
                     />
                 }
-                {window.location.host === "schoettner.dev" &&
+                {siteTheme === "schoettner.dev" &&
                     <GatsbyImage
                         className='header-image'
                         image={data.schoettnerDev.childImageSharp.gatsbyImageData}
                         alt='Oliver Schöttner'
                     />
                 }
-                {window.location.host === "schoettner.rocks" &&
+                {siteTheme === "schoettner.rocks" &&
                     <GatsbyImage
                         className='header-image'
                         image={data.schoettnerRocks.childImageSharp.gatsbyImageData}
