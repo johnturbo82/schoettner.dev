@@ -8,8 +8,7 @@ import BreadCrump from './BreadCrump';
 import HomeButton from './HomeButton';
 import SideBar from './SideBar';
 import InstagramFeed from './InstagramFeed';
-import rocksStyles from '../styles/schoettner.rocks.scss';
-import devStyles from '../styles/schoettner.dev.scss';
+import '../styles/schoettner.dev.scss';
 
 type LayoutProps = {
     children: ReactNode;
@@ -22,7 +21,6 @@ const Layout = (props: LayoutProps) => {
 
     const [menuVisible, setMenuVisible] = useState(false);
     const [siteTheme, setSiteTheme] = useState("schoettner.dev");
-    const [theme, setTheme] = useState();
 
     const handleUserKeyPress = useCallback((event: { key: any; keyCode: any }) => {
         const { key, keyCode } = event;
@@ -33,13 +31,7 @@ const Layout = (props: LayoutProps) => {
     }, []);
 
     useEffect(() => {
-        if (window) {
-            setSiteTheme(window.location.host);
-            setTheme(rocksStyles);
-        } else {
-            setSiteTheme("schoettner.dev");
-            setTheme(devStyles);
-        }
+        setSiteTheme(window ? window.location.host : "schoettner.dev");
         window.addEventListener("keydown", handleUserKeyPress);
         window.addEventListener('scroll', handleScroll);
         return () => {
@@ -69,10 +61,10 @@ const Layout = (props: LayoutProps) => {
     }
 
     return (
-        <div className={devStyles}>
+        <div>
             <div id="container" className="site-container">
+                <HomeButton burgerClick={toggleMenu} />
                 <div className="topbar">
-                    <HomeButton burgerClick={toggleMenu} />
                     <h1 className='site-title'>
                         <Link to='/'>{siteTheme}</Link>
                     </h1>

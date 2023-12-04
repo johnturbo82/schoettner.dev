@@ -7,7 +7,7 @@
     min-height: 100vh;
 }
 .site-container::after {
-    content: '★';
+    content: "★";
     font-family: Arial, Helvetica, sans-serif;
     display: block;
     font-size: 40vw;
@@ -23,7 +23,7 @@
     }
 }
 .site-container::before {
-    content: '☆';
+    content: "☆";
     font-family: Arial, Helvetica, sans-serif;
     display: block;
     font-size: 40vw;
@@ -43,6 +43,11 @@
     margin: 8px 0 0 110px;
     position: absolute;
 
+    @include xs {
+        font-size: 5vw;
+        margin: 7px;
+    }
+
     a {
         font-size: 2rem;
         text-decoration: none;
@@ -50,10 +55,12 @@
         color: $title-color;
 
         @include xs {
-            font-size: 2rem;
+            font-size: 5vw;
+            margin: 8px 0 0 10px;
         }
     }
 }
+
 .topbar {
     z-index: 9900;
     position: fixed;
@@ -62,17 +69,11 @@
     height: 58px;
     transition: background-color 0.5s;
 
-    .social-icons {
-        margin-right: 10px;
-        margin-top: -2px;
-
-        a {
-            img {
-                height: 40px;
-            }
-        }
+    @include xs {
+        height: 40px;
     }
 }
+
 .topbar.active {
     background-color: $first-color;
     transition: background-color 0.5s;
