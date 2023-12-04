@@ -111,6 +111,6 @@ export const Head: HeadFC = () => (
 		<html lang="de" />
 		<title>Über mich</title>
 		<body className="about_me" />
-		<link rel="canonical" href={"https://schoettner.dev/ueber-mich"} />
+			<link rel="canonical" href={"https://schoettner.dev/ueber-mich"} />
 	</>
 )
