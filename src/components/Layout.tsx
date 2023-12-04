@@ -8,7 +8,8 @@ import BreadCrump from './BreadCrump';
 import HomeButton from './HomeButton';
 import SideBar from './SideBar';
 import InstagramFeed from './InstagramFeed';
-import '../styles/schoettner.dev.scss';
+import rocksStyles from '../styles/schoettner.rocks.scss';
+import devStyles from '../styles/schoettner.dev.scss';
 
 type LayoutProps = {
     children: ReactNode;
@@ -62,6 +63,8 @@ const Layout = (props: LayoutProps) => {
 
     return (
         <>
+            {siteTheme === "schoettner.rocks" && <div className={rocksStyles}></div>}
+            {siteTheme === "schoettner.dev" && <div className={devStyles}></div>}
             <div id="container" className="site-container">
                 <div className="topbar">
                     <HomeButton burgerClick={toggleMenu} />

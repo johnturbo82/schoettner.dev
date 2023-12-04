@@ -44,14 +44,7 @@ const Header = () => {
                         <SocialIcons />
                     </div>
                 </div>
-                {siteTheme === "localhost:8000" &&
-                    <GatsbyImage
-                        className='header-image'
-                        image={data.schoettnerRocks.childImageSharp.gatsbyImageData}
-                        alt='Oliver Schöttner'
-                    />
-                }
-                {siteTheme === "schoettner.dev" &&
+                {(siteTheme === "localhost:8000" || siteTheme === "schoettner.dev") &&
                     <GatsbyImage
                         className='header-image'
                         image={data.schoettnerDev.childImageSharp.gatsbyImageData}
