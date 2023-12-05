@@ -45,7 +45,7 @@
         color: $third-color;
     }
     a:after {
-        content: '';
+        content: "";
         display: inline-block;
         height: 2px;
         background-color: $second-color;
@@ -82,19 +82,19 @@
             background-color: #000;
         }
         a.linkedin {
-            background-color: #0A66C2;
+            background-color: #0a66c2;
         }
         a.facebook {
-            background-color: #1877F2;
+            background-color: #1877f2;
         }
         a.instagram {
-            background-color: #E4405F;
+            background-color: #e4405f;
         }
         a.github {
             background-color: #181717;
         }
         a.mail {
-            background-color: #EA4335;
+            background-color: #ea4335;
         }
     }
 
@@ -130,6 +130,18 @@
     flex-grow: 1;
     width: 100%;
     margin: 0 auto;
+}
+
+.content-container#map {
+    padding: 0;
+    margin: 0;
+    height: 400px;
+    iframe {
+        border: none;
+        height: 400px;
+        width: 100%;
+        margin: 0;
+    }
 }
 
 .right_sidebar {

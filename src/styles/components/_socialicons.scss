@@ -1,18 +1,23 @@
 .social-icons {
     margin-bottom: 20px;
 
-
     @include sm {
         float: right;
     }
 
     a {
         display: inline-block;
-        height: 44px;
-        width: 44px;
+        height: 40px;
+        width: 40px;
+
+        @include sm {
+            height: 4vw;
+            width: 4vw;
+            max-width: 60px;
+            max-height: 60px;
+        }
 
         img {
-            height: 40px;
             padding: 5px;
             margin: 2px;
             transition: padding 0.2s ease;
@@ -27,7 +32,7 @@
     }
 
     .gatsby:after {
-        content: '';
+        content: "";
         display: block;
         background-color: #663399;
         position: relative;
@@ -35,7 +40,7 @@
         width: 100%;
     }
     .x:after {
-        content: '';
+        content: "";
         display: block;
         background-color: #000;
         position: relative;
@@ -45,9 +50,9 @@
         width: 100%;
     }
     .linkedin:after {
-        content: '';
+        content: "";
         display: block;
-        background-color: #0A66C2;
+        background-color: #0a66c2;
         position: relative;
         height: 8px;
         border-bottom-left-radius: 5px;
@@ -55,9 +60,9 @@
         width: 100%;
     }
     .facebook:after {
-        content: '';
+        content: "";
         display: block;
-        background-color: #1877F2;
+        background-color: #1877f2;
         position: relative;
         height: 8px;
         border-bottom-left-radius: 5px;
@@ -65,9 +70,9 @@
         width: 100%;
     }
     .instagram:after {
-        content: '';
+        content: "";
         display: block;
-        background-color: #E4405F;
+        background-color: #e4405f;
         position: relative;
         height: 8px;
         border-bottom-left-radius: 5px;
@@ -75,7 +80,7 @@
         width: 100%;
     }
     .github:after {
-        content: '';
+        content: "";
         display: block;
         background-color: #181717;
         position: relative;

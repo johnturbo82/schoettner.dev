@@ -9,7 +9,11 @@ type ContentProps = {
 const Content = (props: ContentProps) => {
     var contentClass = "content";
     if (props.type) {
-        contentClass = contentClass + " " + props.type;
+        if (props.type === "content-full") {
+            contentClass = props.type;
+        } else {
+            contentClass = contentClass + " " + props.type;
+        }
     }
 
     return (

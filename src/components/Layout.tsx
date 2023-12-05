@@ -86,6 +86,9 @@ const Layout = (props: LayoutProps) => {
                     <Content id="footer">
                         <Footer />
                     </Content>
+                    <Content id="map" type="content-full">
+                        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=11.427605152130129%2C48.791117932533574%2C11.458075046539307%2C48.799535479407005&amp;layer=mapnik&amp;marker=48.795326882518644%2C11.442840099334717"></iframe>
+                    </Content>
                 </div>
             </div >
         </div>
