@@ -15,8 +15,12 @@ const IndexPage: React.FC<PageProps> = () => {
 				<p>Meine Freizeit verbringe ich im Sommer gerne auf einem Motorrad oder bei Konzerten.</p>
 				<p>Sollte ich zu Hause auf der Couch sein, läuft Eishockey oder Fussball <em>oder beides</em>.</p>
 				<p>Diese Seite gibt's nur, weil viele Neugierige die Domain meiner Email-Adresse in den Browser tippen und dann enttäuscht sind, dass es keinen Inhalt gibt. Solltest Du auch auf diesem Wege zu mir gekommen sein: <em>Fühl Dich gerne angesprochen!</em></p>
-				<p>Solltest Du ein Recruiter sein, findest Du einen Weg mich zu kontaktieren.</p>
-				<p>Falls ich mal wieder einen Vortrag halten soll, schreib' mir gerne eine E-Mail.</p>
+				<h2>Hire me</h2>
+				<ul>
+					<li>An spannenden <em>Nebenher-Projekten</em> bin ich immer interessiert! Schreib mich an!</li>
+					<li><em>Vorträge</em> zu technischen Themen halte ich sehr gerne, falls ich das mal wieder tun soll, nimm' gerne Kontakt auf.</li>
+					<li>Solltest Du ein <em>Recruiter</em> sein, findest Du sicher einen Weg mich zu kontaktieren.</li>
+				</ul>
 			</div>
 			<SlideShow />
 		</Layout>
@@ -30,6 +34,6 @@ export const Head: HeadFC = () => (
 		<html lang="de" />
 		<title>Startseite</title>
 		<body className="home" />
-        <link rel="canonical" href="https://schoettner.dev" />
+		<link rel="canonical" href="https://schoettner.dev" />
 	</>
 )
