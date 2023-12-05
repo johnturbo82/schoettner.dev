@@ -8,7 +8,7 @@ import BreadCrump from './BreadCrump';
 import HomeButton from './HomeButton';
 import SideBar from './SideBar';
 import InstagramFeed from './InstagramFeed';
-import '../styles/schoettner.dev.scss';
+import '../styles/style.scss';
 
 type LayoutProps = {
     children: ReactNode;

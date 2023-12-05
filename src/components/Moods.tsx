@@ -43,7 +43,7 @@ const Moods = (props: MoodsProps) => {
             <a href={"https://schoettner.rocks" + props.path} className="mood" title="schoettner.dev" style={{ backgroundImage: `url(${data.jt1.childImageSharp.gatsbyImageData.images.fallback.src})` }}>
                 <div>Rock n' Roll</div>
             </a>
-            <a href={"https://pure.schoettner.dev" + props.path} className="mood" title="schoettner.dev" style={{ backgroundImage: `url(${data.code.childImageSharp.gatsbyImageData.images.fallback.src})` }}>
+            <a href={"https://schoettner.org" + props.path} className="mood" title="schoettner.dev" style={{ backgroundImage: `url(${data.code.childImageSharp.gatsbyImageData.images.fallback.src})` }}>
                 <div>Nerdy Feelings</div>
             </a>
         </div>

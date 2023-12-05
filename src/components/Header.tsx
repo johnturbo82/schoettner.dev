@@ -17,12 +17,7 @@ const Header = () => {
       				title
     			}
   			}
-            schoettnerDev: file(relativePath: {eq: "schoettner.dev.title.jpg"}) {
-                childImageSharp {
-                    gatsbyImageData(quality: 95, layout: CONSTRAINED)
-                }
-            }
-            schoettnerRocks: file(relativePath: {eq: "schoettner.rocks.title.jpg"}) {
+            schoettnerDev: file(relativePath: {eq: "title.jpg"}) {
                 childImageSharp {
                     gatsbyImageData(quality: 95, layout: CONSTRAINED)
                 }

@@ -54,7 +54,7 @@ const AboutPage = () => {
 				<li><button onClick={() => scrollTo('#ercingolstadt')}>ERC Ingolstadt</button></li>
 				<li><button onClick={() => scrollTo('#tsv1860muenchen')}>TSV 1860 München</button></li>
 			</ul>
-			<p>Über das Menü kannst Du unter "Themes" das passende Template auswählen, wenn Du Lust hast. Dann gibt es noch <a href="https://pure.schoettner.dev">pure.schoettner.dev</a>, einfach nur deshalb um auf grafische Gestaltung zu verzichten und zu testen, wie schnell dieses <em>Framework</em> wirklich sein kann.</p>
+			<p>Über das Menü kannst Du unter "Themes" das passende Template auswählen, wenn Du Lust hast. Dann gibt es noch <a href="https://schoettner.org">schoettner.org</a>, einfach nur deshalb um auf grafische Gestaltung zu verzichten und zu testen, wie schnell dieses <em>Framework</em> wirklich sein kann.</p>
 			<h2 id="entwicklung">Entwicklung</h2>
 			<p>Dass doch einige Jahre ins Land gegangen sind bemerkt man spätestens, wenn man einen Lebenslauf schreibt. So kann ich in Summe auf über 20 Jahre Entwicklung zurückblicken. Anfangs sicher nur Websites und das meiste war da auch ehrliches <em>HTML</em> mit etwas <em>CSS</em>.</p>
 			<h2 id="motorrad">Motorradfahren</h2>
